@@ -11,7 +11,7 @@ namespace SpoZhamREST.Controllers
     public class UserController : ControllerBase
     {
         private UserManager _userManager = new();
-        // GET: api/<UserController>
+        
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status409Conflict)]

@@ -61,3 +61,4 @@ C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST
 C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamREST\obj\Debug\net6.0\SpoZhamREST.pdb
 C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamREST\obj\Debug\net6.0\SpoZhamREST.genruntimeconfig.cache
 C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamREST\obj\Debug\net6.0\ref\SpoZhamREST.dll
+C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamREST\bin\Debug\net6.0\System.Web.Cors.dll
