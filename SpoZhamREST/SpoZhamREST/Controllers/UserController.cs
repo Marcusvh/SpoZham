@@ -6,12 +6,21 @@ using SpoZhamREST.Managers;
 
 namespace SpoZhamREST.Controllers
 {
+    /// <summary>
+    /// mellemledet mellem HTTP request og databasen
+    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
     public class UserController : ControllerBase
     {
         private UserManager _userManager = new();
         
+        /// <summary>
+        /// modtager HTTP POST request med information fra en nyoprettet bruger
+        /// 
+        /// </summary>
+        /// <param name="newUser">information fra nyoprettet bruger gemmes her</param>
+        /// <returns>den nye bruger</returns>
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status409Conflict)]
