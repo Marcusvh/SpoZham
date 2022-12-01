@@ -41,5 +41,43 @@ namespace SpoZhamREST.Managers
             }
         }
 
+        public string SpotifyInfoToDB(int id, string access, string refresh, DateTime time)
+        {
+            string sql = "INSERT INTO SpotifyUser VALUES(@id, @access, @refresh, @time)";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand cmd = new SqlCommand(sql,connection);
+                cmd.Parameters.AddWithValue("@id", id);
+                cmd.Parameters.AddWithValue("@access", access);
+                cmd.Parameters.AddWithValue("@refresh", refresh);
+                cmd.Parameters.AddWithValue("@time", time);
+                cmd.Connection.Open();
+
+                int rows = cmd.ExecuteNonQuery();
+            }
+            return "Success";
+        }
+
+        public string refreshToken(int id, string access, string refresh, DateTime time)
+        {
+            string Sql = "UPDATE spotifyUser SET Access_Token = @access, Refresh_Token = @refresh, TimeRecived = @time where Spotify_Id = @id";
+
+            using(SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand cmd = new SqlCommand(Sql, connection);
+                cmd.Parameters.AddWithValue("@access", access);
+                cmd.Parameters.AddWithValue("@refresh", refresh);
+                cmd.Parameters.AddWithValue("@time", time);
+                cmd.Parameters.AddWithValue("@id", id);
+                cmd.Connection.Open();
+
+
+                int rows = cmd.ExecuteNonQuery();
+            }
+
+            return "Success";
+        }
+
     }
 }
