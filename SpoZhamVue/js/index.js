@@ -9,7 +9,7 @@ const App = Vue.createApp({
     methods: {
         user() {
             axios.post("http://localhost:5204/api/User", {
-                userName: this.Username,
+                username: this.Username,
                 password: this.Password
             })
             .then(response => {
@@ -21,3 +21,6 @@ const App = Vue.createApp({
 
 });
 App.mount('#app')
+
+
+
