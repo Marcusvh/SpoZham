@@ -6,11 +6,11 @@ namespace SpoZhamREST.Utility
 {
     public class UDP_Receiver
     {
-
-        public void UDPReciever()
+        private const int listeningPort = 17000;
+        public string UDPReciever()
         {
             Socket sock = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
-            IPEndPoint iep = new IPEndPoint(IPAddress.Any, 17000);
+            IPEndPoint iep = new IPEndPoint(IPAddress.Any, listeningPort);
             sock.Bind(iep);
             EndPoint ep = (EndPoint)iep;
             Console.WriteLine("Ready to receive...");
@@ -21,6 +21,8 @@ namespace SpoZhamREST.Utility
             Console.WriteLine("received: {0}  from: {1}", stringData, ep.ToString());
 
             sock.Close();
+
+            return stringData;
         }
     }
 }
