@@ -8,23 +8,23 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Bruger\\.nuget\\packages\\": {},
+    "C:\\Users\\Jindoohex\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bruger\\Desktop\\Zealand\\3sem\\Eksamen\\Systemudvikling\\SpoZham\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj",
+      "projectUniqueName": "C:\\Programming\\MyCode\\SpoZham\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj",
       "projectName": "SpoZhamDLL",
-      "projectPath": "C:\\Users\\Bruger\\Desktop\\Zealand\\3sem\\Eksamen\\Systemudvikling\\SpoZham\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj",
-      "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bruger\\Desktop\\Zealand\\3sem\\Eksamen\\Systemudvikling\\SpoZham\\SpoZhamREST\\SpoZhamDLL\\obj\\",
+      "projectPath": "C:\\Programming\\MyCode\\SpoZham\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj",
+      "packagesPath": "C:\\Users\\Jindoohex\\.nuget\\packages\\",
+      "outputPath": "C:\\Programming\\MyCode\\SpoZham\\SpoZhamREST\\SpoZhamDLL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Jindoohex\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
