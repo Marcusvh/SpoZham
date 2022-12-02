@@ -22,3 +22,15 @@ C:\Programming\MyCode\SpoZham\SpoZhamREST\SpoZhamDLL\obj\Debug\net6.0\SpoZhamDLL
 C:\Programming\MyCode\SpoZham\SpoZhamREST\SpoZhamDLL\obj\Debug\net6.0\refint\SpoZhamDLL.dll
 C:\Programming\MyCode\SpoZham\SpoZhamREST\SpoZhamDLL\obj\Debug\net6.0\SpoZhamDLL.pdb
 C:\Programming\MyCode\SpoZham\SpoZhamREST\SpoZhamDLL\obj\Debug\net6.0\ref\SpoZhamDLL.dll
+C:\3. semester eksamen\SpoZhamREST\SpoZhamDLL\bin\Debug\net6.0\SpoZhamDLL.deps.json
+C:\3. semester eksamen\SpoZhamREST\SpoZhamDLL\bin\Debug\net6.0\SpoZhamDLL.dll
+C:\3. semester eksamen\SpoZhamREST\SpoZhamDLL\bin\Debug\net6.0\SpoZhamDLL.pdb
+C:\3. semester eksamen\SpoZhamREST\SpoZhamDLL\obj\Debug\net6.0\SpoZhamDLL.csproj.AssemblyReference.cache
+C:\3. semester eksamen\SpoZhamREST\SpoZhamDLL\obj\Debug\net6.0\SpoZhamDLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\3. semester eksamen\SpoZhamREST\SpoZhamDLL\obj\Debug\net6.0\SpoZhamDLL.AssemblyInfoInputs.cache
+C:\3. semester eksamen\SpoZhamREST\SpoZhamDLL\obj\Debug\net6.0\SpoZhamDLL.AssemblyInfo.cs
+C:\3. semester eksamen\SpoZhamREST\SpoZhamDLL\obj\Debug\net6.0\SpoZhamDLL.csproj.CoreCompileInputs.cache
+C:\3. semester eksamen\SpoZhamREST\SpoZhamDLL\obj\Debug\net6.0\SpoZhamDLL.dll
+C:\3. semester eksamen\SpoZhamREST\SpoZhamDLL\obj\Debug\net6.0\refint\SpoZhamDLL.dll
+C:\3. semester eksamen\SpoZhamREST\SpoZhamDLL\obj\Debug\net6.0\SpoZhamDLL.pdb
+C:\3. semester eksamen\SpoZhamREST\SpoZhamDLL\obj\Debug\net6.0\ref\SpoZhamDLL.dll

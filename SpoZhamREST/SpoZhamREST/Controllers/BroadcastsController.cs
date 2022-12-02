@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SpoZhamREST.Managers;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -8,6 +9,8 @@ namespace SpoZhamREST.Controllers
     [ApiController]
     public class BroadcastsController : ControllerBase
     {
+        BroadcastManager _mrg = new BroadcastManager();
+
         // GET: api/<BroadcastsController>
         [HttpGet]
         public IEnumerable<string> Get()
@@ -22,10 +25,19 @@ namespace SpoZhamREST.Controllers
             return "value";
         }
 
-        // POST api/<BroadcastsController>
+
         [HttpPost]
-        public void Post([FromBody] string value)
+        [Route("api/Broadcast")]
+        public IActionResult PostTrackHistoryToDB([FromBody]int track, int trackhistoryid, int userid, int trackid)
         {
+            try
+            {
+                return Created("", _mrg.TrackHistoryToDB(trackhistoryid, userid, trackid));
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
         }
 
         // PUT api/<BroadcastsController>/5
