@@ -28,11 +28,11 @@ namespace SpoZhamREST.Controllers
 
         [HttpPost]
         [Route("api/Broadcast")]
-        public IActionResult PostTrackHistoryToDB([FromBody]int track, int trackhistoryid, int userid, int trackid)
+        public IActionResult PostTrackHistoryToDB([FromBody] int track, int userid, int trackid)
         {
             try
             {
-                return Created("", _mrg.TrackHistoryToDB(trackhistoryid, userid, trackid));
+                return Created("", _mrg.TrackHistoryToDB( userid, trackid));
             }
             catch (Exception e)
             {

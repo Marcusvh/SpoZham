@@ -16,16 +16,15 @@ namespace SpoZhamREST.Managers
         /// <param name="userId"></param>
         /// <param name="trackId"></param>
         /// <returns></returns>
-        public string TrackHistoryToDB(int trackhistoryId, int userId, int trackId)
+        public string TrackHistoryToDB(int userId, int trackId)
         {
             DateTime timestamp = DateTime.Now;
 
-            string sql = "INSERT INTO [TrackHistory] VALUES(@Track_History_Id, @userId, @trackId, @timestamp)";
+            string sql = "INSERT INTO [TrackHistory] VALUES(@userId, @trackId, @timestamp)";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 SqlCommand cmd = new SqlCommand(sql, connection);
-                cmd.Parameters.AddWithValue("@Track_History_Id", trackhistoryId);
                 cmd.Parameters.AddWithValue("@userId", userId);
                 cmd.Parameters.AddWithValue("@trackId", trackId);
                 cmd.Parameters.AddWithValue("@timestamp", timestamp);
