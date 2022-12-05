@@ -41,17 +41,18 @@ namespace SpoZhamREST.Managers
             }
         }
 
-        public string SpotifyInfoToDB(int id, string access, string refresh, DateTime time)
+        public string SpotifyInfoToDB(spot spot)
         {
             string sql = "INSERT INTO SpotifyUser VALUES(@id, @access, @refresh, @time)";
-
+            DateTime dateToken = DateTime.Now;
+            
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 SqlCommand cmd = new SqlCommand(sql,connection);
-                cmd.Parameters.AddWithValue("@id", id);
-                cmd.Parameters.AddWithValue("@access", access);
-                cmd.Parameters.AddWithValue("@refresh", refresh);
-                cmd.Parameters.AddWithValue("@time", time);
+                cmd.Parameters.AddWithValue("@id", spot.id);
+                cmd.Parameters.AddWithValue("@access", spot.access);
+                cmd.Parameters.AddWithValue("@refresh", spot.refresh);
+                cmd.Parameters.AddWithValue("@time", dateToken);
                 cmd.Connection.Open();
 
                 int rows = cmd.ExecuteNonQuery();
@@ -59,16 +60,38 @@ namespace SpoZhamREST.Managers
             return "Success";
         }
 
-        public string refreshToken(int id, string access, string refresh, DateTime time)
+        public string GetRefreshToken(int id)
         {
-            string Sql = "UPDATE spotifyUser SET Access_Token = @access, Refresh_Token = @refresh, TimeRecived = @time where Spotify_Id = @id";
+            string token = "";
+
+            string sqlGet = "SELECT Refresh_Token FROM SpotifyUser WHERE Spotify_Id = @id";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand cmd = new SqlCommand(sqlGet, connection);
+                cmd.Parameters.AddWithValue("@id", id);
+                cmd.Connection.Open();
+
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                if(reader.Read())
+                {
+                    token = reader.GetString(0);
+                }
+                return token;
+            }
+        }
+
+        public string refreshToken(int id, string access)
+        {
+            string Sql = "UPDATE spotifyUser SET Access_Token = @access, TimeRecived = @time where Spotify_Id = @id";
+
+            DateTime dateToken = DateTime.Now;
 
             using(SqlConnection connection = new SqlConnection(connectionString))
             {
                 SqlCommand cmd = new SqlCommand(Sql, connection);
                 cmd.Parameters.AddWithValue("@access", access);
-                cmd.Parameters.AddWithValue("@refresh", refresh);
-                cmd.Parameters.AddWithValue("@time", time);
+                cmd.Parameters.AddWithValue("@time", dateToken);
                 cmd.Parameters.AddWithValue("@id", id);
                 cmd.Connection.Open();
 
