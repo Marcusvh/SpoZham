@@ -28,6 +28,7 @@ namespace SpoZhamREST.Controllers
         {
             try
             {
+                newUser.UserValidation();
                 return Created("", _userManager.CreateUser(newUser));
             }
             catch (Exception e)
@@ -36,6 +37,32 @@ namespace SpoZhamREST.Controllers
             }
         }
 
-        
+        [HttpPost]
+        [Route("Spotify/AuthToken")]
+        public IActionResult PostSpotifyInfoToDB([FromBody] int id, string access, string refresh, DateTime time)
+        {
+            try
+            {
+                return Created("", _userManager.SpotifyInfoToDB(id, access, refresh, time));
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        }
+
+        [HttpPost]
+        [Route("Spotify/RefreshToken/{id}")]
+        public IActionResult RefreshTokenToDB([FromBody] int id, string access, string refresh, DateTime time)
+        {
+            try
+            {
+                return Created("", _userManager.refreshToken(id, access, refresh, time));
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        }
     }
 }

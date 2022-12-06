@@ -99,5 +99,8 @@ namespace SpoZhamREST.Managers.Tests
 
             Assert.IsTrue(user.PasswordValidation());
         }
+        // TODO: 
+        //[TestMethod]
+        //public void SpotifyInfoToDB_ShouldReturn
     }
 }
