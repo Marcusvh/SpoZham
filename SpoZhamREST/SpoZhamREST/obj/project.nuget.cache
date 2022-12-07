@@ -1,16 +1,5 @@
 {
   "version": 2,
-<<<<<<< HEAD
-<<<<<<< HEAD
-  "dgSpecHash": "z7CeY5++ybvoxbjj2N/1Tan8q1fkymy+4RA/qP04pfvOQpqYabs0+eVyxkCA63IruFhCePdsjrWkzRsFpUlJJA==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamREST\\SpoZhamREST.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 3bb8ae4fa35cfd25c2f6c1e4afef10bd10881716
   "dgSpecHash": "ZB8ulmvyEVyUQAeZNe6HfsYtPfqQ9Hr6D4kxz54txKH9tUYgvHI9r+OepEtUhbNlZDoRewkVYrvcnSvREJNZDg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Bruger\\Desktop\\Zealand\\3sem\\Eksamen\\Systemudvikling\\SpoZham\\SpoZhamREST\\SpoZhamREST\\SpoZhamREST.csproj",
@@ -85,12 +74,6 @@
   ],
   "logs": [
     {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\Bruger\\Desktop\\Zealand\\3sem\\Eksamen\\Systemudvikling\\SpoZham\\SpoZhamREST\\SpoZhamREST\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    },
-    {
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
@@ -101,5 +84,4 @@
       ]
     }
   ]
->>>>>>> 5d6302d0dfc4af323ccf090455879ccd6f0afb4e
 }
