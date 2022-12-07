@@ -38,26 +38,41 @@ namespace SpoZhamREST.Controllers
         }
 
         [HttpPost]
-        [Route("Spotify/AuthToken")]
-        public IActionResult PostSpotifyInfoToDB([FromBody] int id, string access, string refresh, DateTime time)
+        [Route("Spotify/AddToken")]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public IActionResult PostSpotifyInfoToDB([FromQuery] spot spot)
         {
             try
             {
-                return Created("", _userManager.SpotifyInfoToDB(id, access, refresh, time));
+                return Created("", _userManager.SpotifyInfoToDB(spot));
             }
             catch (Exception e)
             {
-                return BadRequest(e.Message);
+                return BadRequest("fukka u");
             }
+        }
+        [HttpGet]
+        [Route("Spotify/AddToken")]
+        public string ewlep()
+        {
+            return "wpewlep";
+        }
+
+        [HttpGet]
+        [Route("Spotify/GetRefreshToken")]
+        public string GetRefreshToken([FromQuery] int id)
+        {
+            return _userManager.GetRefreshToken(id);
         }
 
         [HttpPost]
-        [Route("Spotify/RefreshToken/{id}")]
-        public IActionResult RefreshTokenToDB([FromBody] int id, string access, string refresh, DateTime time)
+        [Route("Spotify/RefreshToken")]
+        public IActionResult RefreshTokenToDB([FromQuery] int id, string access)
         {
             try
             {
-                return Created("", _userManager.refreshToken(id, access, refresh, time));
+                return Created("", _userManager.refreshToken(id, access));
             }
             catch (Exception e)
             {
