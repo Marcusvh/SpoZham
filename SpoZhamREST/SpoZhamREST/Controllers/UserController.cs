@@ -52,23 +52,32 @@ namespace SpoZhamREST.Controllers
                 return BadRequest("fukka u");
             }
         }
+
         [HttpGet]
-        [Route("Spotify/AddToken")]
-        public string ewlep()
+        [Route("Spotify/Token")]
+        public IActionResult GetToken([FromQuery] string id)
         {
-            return "wpewlep";
+            try
+            {
+                return Ok(_userManager.GetToken(id));
+            }
+            catch (Exception e)
+            {
+                return NotFound(e.Message);
+            }
+            
         }
 
         [HttpGet]
         [Route("Spotify/GetRefreshToken")]
-        public string GetRefreshToken([FromQuery] int id)
+        public string GetRefreshToken([FromQuery] string id)
         {
             return _userManager.GetRefreshToken(id);
         }
 
         [HttpPost]
         [Route("Spotify/RefreshToken")]
-        public IActionResult RefreshTokenToDB([FromQuery] int id, string access)
+        public IActionResult RefreshTokenToDB([FromQuery] string id, string access)
         {
             try
             {

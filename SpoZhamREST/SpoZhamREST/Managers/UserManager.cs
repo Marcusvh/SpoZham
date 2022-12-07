@@ -40,9 +40,18 @@ namespace SpoZhamREST.Managers
                 return newUser;
             }
         }
-
+        /// <summary>
+        /// opretter en spotify bruger med tokens (access og refresh) samt timestamp
+        /// </summary>
+        /// <param name="spot">oplysninger for at kunne oprette en spotify bruger i databasen</param>
+        /// <returns>text streng der fortæller at det er gået godt</returns>
         public string SpotifyInfoToDB(spot spot)
         {
+            if(spot == null)
+            {
+                throw new ArgumentNullException("fik ikke nogle oplysninger med");
+            }
+
             string sql = "INSERT INTO SpotifyUser VALUES(@id, @access, @refresh, @time)";
             DateTime dateToken = DateTime.Now;
             
@@ -60,8 +69,16 @@ namespace SpoZhamREST.Managers
             return "Success";
         }
 
-        public string GetRefreshToken(int id)
+        /// <summary>
+        /// henter refresh token fra databasen baseret på det SpotifyUser_Id der bliver sendt med
+        /// </summary>
+        /// <param name="id">spotify user ID</param>
+        /// <returns>sender refresh token for spotify useren</returns>
+        public string GetRefreshToken(string id)
         {
+            if (string.IsNullOrWhiteSpace(id))
+                throw new ArgumentNullException("Der skal sendes et id med");
+
             string token = "";
 
             string sqlGet = "SELECT Refresh_Token FROM SpotifyUser WHERE Spotify_Id = @id";
@@ -81,8 +98,11 @@ namespace SpoZhamREST.Managers
             }
         }
 
-        public string refreshToken(int id, string access)
+        public string refreshToken(string id, string access)
         {
+            if (string.IsNullOrWhiteSpace(id) || string.IsNullOrWhiteSpace(access))
+                throw new ArgumentNullException("spotify id og refresh er tom");
+
             string Sql = "UPDATE spotifyUser SET Access_Token = @access, TimeRecived = @time where Spotify_Id = @id";
 
             DateTime dateToken = DateTime.Now;
@@ -102,5 +122,34 @@ namespace SpoZhamREST.Managers
             return "Success";
         }
 
+        public spot GetToken(string id)
+        {
+            if (string.IsNullOrWhiteSpace(id))
+                throw new ArgumentNullException("Spotify user id er tom");
+
+            spot spot = new();
+
+            string Sql = "select * from SpotifyUser where Spotify_Id = @id";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand cmd = new SqlCommand(Sql, connection);
+                cmd.Connection.Open();
+                cmd.Parameters.AddWithValue("@id", id);
+
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                if(reader.Read())
+                {
+                    spot.id = reader.GetString(0);
+                    spot.access = reader.GetString(1);
+                    spot.refresh = reader.GetString(2);
+                    spot.TimeStamp = reader.GetDateTime(3);
+                }
+        
+            }
+
+            return spot;
+        }
     }
 }
