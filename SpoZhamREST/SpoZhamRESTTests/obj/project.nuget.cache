@@ -1,5 +1,16 @@
 {
   "version": 2,
+<<<<<<< HEAD
+<<<<<<< HEAD
+  "dgSpecHash": "gmRfj6550q7Y7ZxKTOPErGJ6AZpAa0rudKRWrjw801YVi7ULHjwJcf1cpXbusK5GWD0iWsPAKQHsBqFm/afmog==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamRESTTests\\SpoZhamRESTTests.csproj",
+  "expectedPackageFiles": [],
+  "logs": []
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 3bb8ae4fa35cfd25c2f6c1e4afef10bd10881716
   "dgSpecHash": "0pMjVU4bSORqqwItaNplbpfGhFgZRg7VWcaYjDbUGFYOaRtlGf/HNh+pCD9jlgYWWeaXzWnZqkJBWdEV99XliA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Bruger\\Desktop\\Zealand\\3sem\\Eksamen\\Systemudvikling\\SpoZham\\SpoZhamREST\\SpoZhamRESTTests\\SpoZhamRESTTests.csproj",
@@ -163,4 +174,5 @@
       ]
     }
   ]
+>>>>>>> 5d6302d0dfc4af323ccf090455879ccd6f0afb4e
 }
