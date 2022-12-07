@@ -33,16 +33,25 @@
                 <tr>
                     <td>
                         <select name="AllPlaylists" id="AllPlaylists">
-                            <option value="Vælg Playliste">Vælg Playliste</option>
+                            <option value="">Vælg Playliste</option>
                         </select>
+                    </td>
+                    <td>
+                       <button id="AddButton" onclick="FindSongInfo()">Tilføj</button>
                     </td>
                 </tr>
             </div>
         </table>
     </div>
-   
+    <div>  
         <script src="js/SongInfo.js" type="module"></script>
         <script src="js/ViewPlaylists.js" type="module"></script>
+        <script src="js/SpotifyAccess.js" type="module"></script>
     </div>
+    <script>
+        function wlep() {
+            console.log("fukka");
+        }
+    </script>
 </body>
 </html>

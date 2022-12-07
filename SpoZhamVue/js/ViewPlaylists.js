@@ -1,7 +1,7 @@
 fetch('https://api.spotify.com/v1/users/1110330469/playlists?limit=50',{
     method : 'GET',
     headers: {
-        'Authorization': 'Bearer BQBlZiLPn5QODSjJ9wfbz0eGRAa_5fcfnvDqJEPMac4_Tg2bzz7_kfG-s_L5mSh-t-yZJMkWH4eRnw3kBQ2nMsRo_5K8KlRkjumU2FVQIc_nRrIVOGeSaf88UVtLaQlYAE2yM9g5rzh-DjeNIfA6FEHfL77G38hfdrOlXgqupbv2EUO91IttzrdHHxVz', 
+        'Authorization': 'Bearer BQARobTfyu5gyW-MbT42UM1gJGuW4Ly9IYau3-xOynX0FPGp6PNGNUBcME2U1PfNTfzHo8kFpPCpTC_R0SirmYAKrqQwdn5KMqKIL59gZCxd4al1kwnuuDrUnL1ZaSRlS1QpE9Dse88XPStQ_4C1TSEw7HIYl2xv-k_e5llgrmxdvCkfYHlYaNgU7Hup', 
         'Content-Type': 'application/json',
     },
 })
@@ -16,22 +16,6 @@ fetch('https://api.spotify.com/v1/users/1110330469/playlists?limit=50',{
         });    
 })
 
-function makeP(text, attr, attrValue) {
-    let parentAppend = document.getElementById('AllPlaylists')
-
-    let pText;
-    const p = document.createElement('h4')
-    if(text != "" && text != null){
-        pText = document.createTextNode(text)
-        p.append(pText)
-    }
-
-    if(attr != "" && attr != null) {
-        p.setAttribute(attr, attrValue)
-    }
-
-    parentAppend.appendChild(p)
-}
 
 function makeOption(text, attr, attrValue) {
     let parentAppend = document.getElementById('AllPlaylists')
@@ -49,3 +33,21 @@ function makeOption(text, attr, attrValue) {
 
     parentAppend.appendChild(p)
 }
+
+// function makeP(text, attr, attrValue) {
+//     let parentAppend = document.getElementById('AllPlaylists')
+
+//     let pText;
+//     const p = document.createElement('h4')
+//     if(text != "" && text != null){
+//         pText = document.createTextNode(text)
+//         p.append(pText)
+//     }
+
+//     if(attr != "" && attr != null) {
+//         p.setAttribute(attr, attrValue)
+//     }
+
+//     parentAppend.appendChild(p)
+// }
+
