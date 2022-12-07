@@ -8,7 +8,11 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SpoZhamRESTTests
 <<<<<<< HEAD
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\ringe\Desktop\Zealand\3. Semester\3. Semester projekt\Projektet\SpoZham\SpoZhamREST\SpoZhamRESTTests\
 =======
 build_property.ProjectDir = C:\3. semester eksamen\SpoZhamREST\SpoZhamRESTTests\
 >>>>>>> 5d6302d0dfc4af323ccf090455879ccd6f0afb4e
+=======
+build_property.ProjectDir = C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamRESTTests\
+>>>>>>> 3bb8ae4fa35cfd25c2f6c1e4afef10bd10881716

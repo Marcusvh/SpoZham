@@ -3293,12 +3293,18 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\Cille\\.nuget\\packages\\": {}
 >>>>>>> 5d6302d0dfc4af323ccf090455879ccd6f0afb4e
+=======
+    "C:\\Users\\Bruger\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+>>>>>>> 3bb8ae4fa35cfd25c2f6c1e4afef10bd10881716
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
 <<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamREST\\SpoZhamREST.csproj",
       "projectName": "SpoZhamREST",
@@ -3310,14 +3316,25 @@
         "C:\\Users\\ringe\\AppData\\Roaming\\NuGet\\NuGet.Config",
 =======
       "projectUniqueName": "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamREST\\SpoZhamREST.csproj",
+=======
+      "projectUniqueName": "C:\\Users\\Bruger\\Desktop\\Zealand\\3sem\\Eksamen\\Systemudvikling\\SpoZham\\SpoZhamREST\\SpoZhamREST\\SpoZhamREST.csproj",
+>>>>>>> 3bb8ae4fa35cfd25c2f6c1e4afef10bd10881716
       "projectName": "SpoZhamREST",
-      "projectPath": "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamREST\\SpoZhamREST.csproj",
-      "packagesPath": "C:\\Users\\Cille\\.nuget\\packages\\",
-      "outputPath": "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamREST\\obj\\",
+      "projectPath": "C:\\Users\\Bruger\\Desktop\\Zealand\\3sem\\Eksamen\\Systemudvikling\\SpoZham\\SpoZhamREST\\SpoZhamREST\\SpoZhamREST.csproj",
+      "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Bruger\\Desktop\\Zealand\\3sem\\Eksamen\\Systemudvikling\\SpoZham\\SpoZhamREST\\SpoZhamREST\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\Cille\\AppData\\Roaming\\NuGet\\NuGet.Config",
 >>>>>>> 5d6302d0dfc4af323ccf090455879ccd6f0afb4e
+=======
+        "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+>>>>>>> 3bb8ae4fa35cfd25c2f6c1e4afef10bd10881716
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3332,12 +3349,17 @@
           "targetAlias": "net6.0",
           "projectReferences": {
 <<<<<<< HEAD
+<<<<<<< HEAD
             "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj": {
               "projectPath": "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj"
 =======
             "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj": {
               "projectPath": "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj"
 >>>>>>> 5d6302d0dfc4af323ccf090455879ccd6f0afb4e
+=======
+            "C:\\Users\\Bruger\\Desktop\\Zealand\\3sem\\Eksamen\\Systemudvikling\\SpoZham\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj": {
+              "projectPath": "C:\\Users\\Bruger\\Desktop\\Zealand\\3sem\\Eksamen\\Systemudvikling\\SpoZham\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj"
+>>>>>>> 3bb8ae4fa35cfd25c2f6c1e4afef10bd10881716
             }
           }
         }
@@ -3385,5 +3407,27 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
       }
     }
+<<<<<<< HEAD
   }
+=======
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Bruger\\Desktop\\Zealand\\3sem\\Eksamen\\Systemudvikling\\SpoZham\\SpoZhamREST\\SpoZhamREST\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.AspNet.Cors 5.2.9' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.AspNet.Cors",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+>>>>>>> 3bb8ae4fa35cfd25c2f6c1e4afef10bd10881716
 }

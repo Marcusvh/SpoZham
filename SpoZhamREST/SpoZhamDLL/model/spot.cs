@@ -8,8 +8,9 @@ namespace SpoZhamDLL.model
 {
     public class spot
     {
-        public int id { get; set; }
+        public string id { get; set; }
         public string access { get; set; }
         public string refresh { get; set; }
+        public DateTime? TimeStamp { get; set; }
     }
 }

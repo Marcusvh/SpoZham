@@ -99,8 +99,84 @@ namespace SpoZhamREST.Managers.Tests
 
             Assert.IsTrue(user.PasswordValidation());
         }
-        // TODO: 
-        //[TestMethod]
-        //public void SpotifyInfoToDB_ShouldReturn
+        
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentNullException))]
+        public void SpotifyInfoToDB_ShouldReturnNullException_UserManagerTest()
+        {
+            spot spot = new();
+            spot = null;
+
+            userManager.SpotifyInfoToDB(spot);
+
+            Assert.Fail();
+        }
+        [TestMethod]
+        public void SpotifyInfoToDB_ShouldReturnSuccess_UserManagerTest()
+        {
+            spot spot = new();
+            spot.id = "1231ijkl";
+            spot.access = "ijsdoijasidjsaodiajsdioas";
+            spot.refresh = "821ue8ueo1jejede82d";
+            spot.TimeStamp = DateTime.Now;
+
+            string actual = userManager.SpotifyInfoToDB(spot);
+
+            Assert.AreEqual("Success", actual);
+        }
+        [TestMethod]
+        [DataRow("")]
+        [DataRow(null)]
+        [ExpectedException(typeof(ArgumentNullException))]
+        public void GetRefreshToken_ShouldReturnNullException_UserManagerTest(string input)
+        {
+            userManager.GetRefreshToken(input);
+
+            Assert.Fail();
+        }
+        [TestMethod]
+        public void GetRefreshToken_ShouldReturnToken_UserManagerTest()
+        {
+            string actual = userManager.GetRefreshToken("1140904457");
+
+            Assert.IsTrue("" != actual); // sus
+        }
+        [TestMethod, ExpectedException(typeof(ArgumentNullException))]
+        [DataRow("", "")]
+        [DataRow(null, null)]
+        [DataRow("", null)]
+        [DataRow(null, "")]
+        public void RefreshToken_ShouldReturnNullException_UserManagerTest(string id, string access)
+        {
+            userManager.refreshToken(id,access);
+
+            Assert.Fail();
+        }
+        [TestMethod]
+        public void RefreshToken_ShouldReturnSuccess_UserManagerTest()
+        {
+            string response = userManager.refreshToken("unitTestId", "ijsdoijasidjsaodiajsdioas");
+
+            Assert.AreEqual("Success", response);
+        }
+
+        [TestMethod, ExpectedException(typeof(ArgumentNullException))]
+        [DataRow("")]
+        [DataRow(null)]
+        public void GetToken_shouldReturnNullExcpetion_UserManagerTest(string input)
+        {
+            userManager.GetToken(input);
+
+            Assert.Fail();
+        }
+        [TestMethod]
+        public void GetToken_ShouldReturnSpot_UserManagerTest()
+        {
+            string refreshToken = userManager.GetRefreshToken("unitTestId");
+
+            spot actual = userManager.GetToken("unitTestId");
+
+            Assert.IsTrue((actual.id == "unitTestId" && actual.refresh == refreshToken));
+        }
     }
 }

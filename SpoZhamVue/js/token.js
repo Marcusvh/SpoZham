@@ -1,10 +1,9 @@
 const urlParams = new URLSearchParams(window.location.search);
 const myParam = urlParams.get('code');
 let refreshToken = "";
-
+const errorHandingTag = document.getElementById("errorHandling")
 // User Id
-const testId = 14
-
+const testId = 1140904457
 
 console.log(myParam);
 
@@ -23,7 +22,6 @@ async function getUserId(token) {
 
     return axios.get('https://api.spotify.com/v1/me', options)    
 }
-
 
 /**
  * make a call to spotify api to get a authorized access token(token with rights) and store it together with logged in user ID and token to refresh access token.
@@ -46,26 +44,55 @@ async function reqToken() {
     })
     .then((response) => response.json())
     .then(async (data) => {
-        console.log(data)
-
+        console.log(data);
         /**
          * Gets the id of the logged in user from spotify api call 
          * */ 
         let userId = await getUserId(data.access_token)
                     .then(response => {return response.data.id})
-        console.log("reqTOKEN USER");
         console.log(userId);
-
         /**
          * make a post call to REST api to store the user ID, access token and refresh token
          */
-        // await axios.post(`http://localhost:5204/api/User/Spotify/AddToken?id=${testId}&access=${myParam}&refresh=${refreshToken}`)   
+        // await axios.post(`http://localhost:5204/api/User/Spotify/AddToken?id=${userId}&access=${myParam}&refresh=${data.refresh_token}`)   // uncomment this and set ${testId} to ${userId} for getting token into database
         // .then(response => {
         //     console.log(response);
         // })
     })
+    .catch((error) => {
+        if(error.response.status == 401) {
+            errorHandingTag.innerHTML = "Kunne ikke få adgang til spotify. genindlæs siden og prøv igen. " + error.code + " " + error.response.status
+        }
+    })
 }
 reqToken()
+
+
+/**
+ * checks if there has passed 1 hour from token creating. it will run RefreshToken function if it has.
+ */
+axios.get(`http://localhost:5204/api/User/Spotify/Token?id=${testId}`)
+.then(response => {
+    console.log(response);
+    let time = response.data.timeStamp
+
+    tokenTime = Date.parse(time)
+    newDateTime = new Date()
+    newTime = newDateTime.getHours() + 1;
+    newDateTime.setHours(newTime)
+    
+    DateTimeMs = Date.parse(newDateTime)
+
+    console.log((DateTimeMs - tokenTime) > 3600000);
+    
+
+    if ((DateTimeMs - tokenTime) > 3600000) {
+        RefreshToken()
+    }
+})
+
+
+
 
 /**
  * based on the user ID a new access token will be made and updated in the database
@@ -79,6 +106,9 @@ async function RefreshToken() {
     await axios.get(`http://localhost:5204/api/User/Spotify/GetRefreshToken?id=${testId}`)
     .then(response => {
         refreshToken = response.data
+        if(refreshToken == "") {
+            errorHandingTag.innerHTML = "Kunne ikke få fat i en ny adgang til spotify. "
+        }
     })
         
 
@@ -98,6 +128,10 @@ async function RefreshToken() {
     })
     .then((response) => response.json())
     .then(async (data) => {
+        console.log(data);
+        if(data.access_token == "" || data.access_token === undefined) {
+            errorHandingTag.innerHTML = "kunne ikke få en ny adgang. prøv at logge ind igen"
+        }
         
         /**
          * adds the new access token to REST api, where it will be put into the database
@@ -106,5 +140,9 @@ async function RefreshToken() {
         .then(response => {
             console.log(response);
         })
+        .catch((error) => {
+            errorHandingTag.innerHTML = "kunne ikke gemme den nye adgangs tilladlse. "
+        }) 
+        
     })
 }
