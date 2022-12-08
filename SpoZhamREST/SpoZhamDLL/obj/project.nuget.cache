@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "D5M4y7KhdVMemVLTHkjA1vd7y/YrE+oqnFXud7QCTZHc8vaIxs4m6w5waPGhdo+vuN7BYOD3CoLvczlaznCgFA==",
   "success": true,
   "projectFilePath": "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj",
+=======
+  "dgSpecHash": "tl92WJYTMifR0JnTGGMJVDGYvSF+dQ+XAKpOzVaKnxtam30Hm1hV0UE/GKAce50Kuy0wKgaYAdSkEaBuacNECw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj",
+>>>>>>> 83f7868efd56a063196d2887d0259afb82f3d092
   "expectedPackageFiles": [],
   "logs": []
 }

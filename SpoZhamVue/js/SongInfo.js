@@ -1,17 +1,15 @@
 const options = {
-    method: 'GET',
-    headers: {
-        'X-RapidAPI-Key': '0f6eff705dmshf162a9814c66ba5p13b8c4jsnef8afa48c048',
-        'X-RapidAPI-Host': 'shazam-core.p.rapidapi.com'
-    }
-};
+     method: 'GET',
+     headers: {
+         'X-RapidAPI-Key': '0f6eff705dmshf162a9814c66ba5p13b8c4jsnef8afa48c048',
+         'X-RapidAPI-Host': 'shazam-core.p.rapidapi.com'
+     }
+ };
 
-async function trackID() {
+ async function trackID() {
     return fetch("http://localhost:5204/api/Broadcasts")
 }
-
-
-
+   
 // track_id=491697169
 
 fetch(`https://shazam-core.p.rapidapi.com/v1/tracks/details?`
@@ -78,47 +76,3 @@ async function ApiSearch(access=accessToken) {
 })
 
 }ApiSearch()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/**
- * laver et api kald til spotify hvor vi lægger en sang i en playliste
- */
-// async function AddSongToPlaylist() {
-//     let playlistID = "42xr6CZ4SlVULt5BGaFPrK"
-
-//     let Atoken = await token()
-//     .then(response => {return response.data})
-
-//     console.log(Atoken);
-//     await fetch(`https://api.spotify.com/v1/playlists/${playlistID}/tracks`, {
-//         method: "POST",
-//         headers: {
-//             "Content-Type": "application/json",
-//             "Authorization": `Bearer ${Atoken.access}`
-//         },
-//         body: JSON.stringify({
-//             "uris": ["spotify:track:7iC9PkiqWeN7E3WWh2dU5P", "spotify:track:6rmXhRIemCTPyMYZRDN7Qg"]
-//         })
-//     })
-//     .then(response => response.json())
-//     .then(data => {
-//         console.log(data)
-    
-//     })
-    
-// }
-// AddSongToPlaylist()
