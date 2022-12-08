@@ -1,5 +1,6 @@
 const options = {
 <<<<<<< HEAD
+<<<<<<< HEAD
      method: 'GET',
      headers: {
          'X-RapidAPI-Key': '0f6eff705dmshf162a9814c66ba5p13b8c4jsnef8afa48c048',
@@ -34,6 +35,21 @@ async function trackID() {
 
 
 
+=======
+    method: 'GET',
+    headers: {
+        'X-RapidAPI-Key': '0f6eff705dmshf162a9814c66ba5p13b8c4jsnef8afa48c048',
+        'X-RapidAPI-Host': 'shazam-core.p.rapidapi.com'
+    }
+};
+
+async function trackID() {
+    return fetch("http://localhost:5204/api/Broadcasts")
+}
+
+
+
+>>>>>>> 52521c2c120d8c6e7efb45df2b4d11e1d6276942
 // track_id=491697169
 
 fetch(`https://shazam-core.p.rapidapi.com/v1/tracks/details?`
@@ -143,5 +159,9 @@ async function ApiSearch(access=accessToken) {
 //     })
     
 // }
+<<<<<<< HEAD
+// AddSongToPlaylist()
+>>>>>>> 52521c2c120d8c6e7efb45df2b4d11e1d6276942
+=======
 // AddSongToPlaylist()
 >>>>>>> 52521c2c120d8c6e7efb45df2b4d11e1d6276942

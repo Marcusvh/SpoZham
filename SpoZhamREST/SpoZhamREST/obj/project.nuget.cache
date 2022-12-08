@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "CR6XZv8IDhXv/JlFDpDS4lHlWCDUSjFFGaZU/jScndpVmdpi+N+sODo3yFbbITudQ6mtH9sGN/rnTymf2HcX2Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamREST\\SpoZhamREST.csproj",
+=======
+  "dgSpecHash": "ZB8ulmvyEVyUQAeZNe6HfsYtPfqQ9Hr6D4kxz54txKH9tUYgvHI9r+OepEtUhbNlZDoRewkVYrvcnSvREJNZDg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Bruger\\Desktop\\Zealand\\3sem\\Eksamen\\Systemudvikling\\SpoZham\\SpoZhamREST\\SpoZhamREST\\SpoZhamREST.csproj",
+>>>>>>> 52521c2c120d8c6e7efb45df2b4d11e1d6276942
   "expectedPackageFiles": [
     "C:\\Users\\ringe\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\ringe\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
@@ -74,12 +80,15 @@
   ],
   "logs": [
     {
+<<<<<<< HEAD
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
       "message": "Problem reading the cache file C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamREST\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
     },
     {
+=======
+>>>>>>> 52521c2c120d8c6e7efb45df2b4d11e1d6276942
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
