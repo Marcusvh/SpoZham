@@ -7,12 +7,4 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SpoZhamDLL
-<<<<<<< HEAD
-<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\ringe\Desktop\Zealand\3. Semester\3. Semester projekt\Projektet\SpoZham\SpoZhamREST\SpoZhamDLL\
-=======
-build_property.ProjectDir = C:\3. semester eksamen\SpoZhamREST\SpoZhamDLL\
->>>>>>> 5d6302d0dfc4af323ccf090455879ccd6f0afb4e
-=======
-build_property.ProjectDir = C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamDLL\
->>>>>>> 3bb8ae4fa35cfd25c2f6c1e4afef10bd10881716

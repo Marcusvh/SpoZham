@@ -12,6 +12,10 @@ table, th, td {
     margin-right: auto;
 }
 
+#ShowPlaylists{
+    position: absolute;
+    top: 5%;
+}
 /* #Scan{
 
     position: absolute;

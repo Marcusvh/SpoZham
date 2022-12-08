@@ -1,10 +1,11 @@
-
+/**
+ * Finder information om en sang og printer den ud, giver også AddSongToPlaylist et track id
+ */
 function FindSongInfo(){
-    console.log("wel");
-    fetch('https://api.spotify.com/v1/search?q=remaster%2520track%3ABad%2520Guy%2520artist%3ASet%2520It%2520Off%2520album%3ADuality%2520year%3A2014&type=track&include_external=audio',{
+fetch("https://api.spotify.com/v1/search?q=remaster%2520track%3ADo+It+Now+Remember+It+Later%2520artist%3ASleeping+With+Sirens%2520year%3A2011%25album%3A20Let's+Cheers+To+This&type=track&include_external=audio",{
         method : 'GET',
         headers: {
-            'Authorization': 'Bearer BQCk8xHd30CfpjtLXBHA105UcIQNr7svXilkA8NiZbjPU5yGA9iwiTavFE3Q4WFTLR5_UNX9ae9v0go3NOlyGHPF_4DneYr6e602MTD9BIE-IqvNc2TIEowsg7gdg_ygnGNQxu7LKpu0NWwqt3S176d7bxh6P4fOpU_K54rykgujgNhrgwmx', 
+            'Authorization': 'Bearer BQA-A3rhb8EVRlN0mBV7on2Kg9UKGNBnoMF_4yZDlrGrZ7-0-Jdy6ZMJl4gP7BIATJuoytlDxFOZ7a9XZrOTpZaim_2rL14BzC8dmJSnc9e5wua9FXXGjjIYsVnD0z16c19sZsX4W4mX4VURXzzXTv_bWtJ25_J-guJY8JxC8DRYrGhGlW0V', 
             'Content-Type': 'application/json',
         },  
     })
@@ -19,19 +20,18 @@ function FindSongInfo(){
     
 }
 
-
-
 /**
  * laver et api kald til spotify hvor vi lægger en sang i en playliste
  */
  async function AddSongToPlaylist(track_id) {
-    let playlistID = '00dPpPbcHtrqfhlmZhaMXu'
+    let playlistID = document.getElementById("AllPlaylists").value
+    console.log(playlistID);
 
     await fetch(`https:api.spotify.com/v1/playlists/${playlistID}/tracks`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
-            "Authorization": "Bearer BQC1t8GHQGGu0b8yVm9skOsdv7Ex0ZKax8Kl6D-nv4ewvWEXicqGvjMu3UPNAIbVPPzY2x0yENXBqMiNhoG_xPOyQYWIeuBCaSAQFV_BUnMU46DJCmajKnEtQ4nS1PcVjpCWFpNxslgmzucHodUtrEuadvpUKwFXd6_bUnooLBBJ65B4jYkIRr1PcoA4kagFld7oOpqy5tvc_Ss"
+            "Authorization": "Bearer BQD6wW2T5PH39N9B0Fa95yUeodEYG20YGUNEAgrLN56IqzTZNRxxHjhi8gJ-iuD_0dZnAsgwmvA2QJrwBMFr_SFjwStNXJIQTDYF45aAj6Z8TOVAJWOvh1rbWM-9YLRHnouZu9LCjbrJ4-SNpG4J5ZaD7Galse8wON7z2jyOC_Tf5MkO6CmOvk208YJua9qMCwoQOaTqwKsRKk8"
         },
         body: JSON.stringify({
             "uris": [`spotify:track:${track_id}`]
@@ -44,7 +44,8 @@ function FindSongInfo(){
     })
 }
 
-//document.getElementById('AddButton').setAttribute("onclick", "FindSongInfo()")
+
+// document.getElementById('AddButton').setAttribute("onclick", "FindSongInfo()")
 
 // document.getElementById('AddButton').onclick = FindSongInfo();
 //FindSongInfo()
