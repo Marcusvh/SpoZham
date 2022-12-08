@@ -39,19 +39,21 @@
                     <td>
                        <button id="AddButton" onclick="FindSongInfo()">Tilføj</button>
                     </td>
+                    <td>
+                        <a id="ShowPlaylist" onclick="ShowPlaylist()">Vis</a>
+                    </td>
                 </tr>
             </div>
         </table>
+        <div id="ShowPlaylists">
+        
+        </div>
     </div>
     <div>  
-        <script src="js/SongInfo.js" type="module"></script>
-        <script src="js/ViewPlaylists.js" type="module"></script>
-        <script src="js/SpotifyAccess.js" type="module"></script>
+        <script src="js/SpotifyAccess.js"></script>
+        <script src="js/SongInfo.js"></script>
+        <script src="js/ViewPlaylists.js"></script>
+        
     </div>
-    <script>
-        function wlep() {
-            console.log("fukka");
-        }
-    </script>
 </body>
 </html>
