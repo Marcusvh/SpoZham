@@ -1,0 +1,31 @@
+table, th, td {
+    border: 1px; 
+    border-color: black; 
+    border-style:solid; 
+    text-align: center;
+}
+
+.center{
+    text-align: center;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* #Scan{
+
+    position: absolute;
+    top: 10%;
+    left: 45%;
+}  */
+
+/* table{
+    
+    top: 20%;
+} */
+
+/* form{
+    position: absolute;
+    top: 35%;
+    left: 40%;
+} */

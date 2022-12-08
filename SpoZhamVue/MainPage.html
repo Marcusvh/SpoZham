@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/MainPage.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="center">
+        <h1 >
+            Scannet Sang
+        </h1>
+    </div>
+    <div>
+        <table class="center">
+            <div>
+                <tr>
+                    <th>Kunstner</th>
+                    <th>Titel</th>
+                    <th>Udgivelsesdato</th>
+                </tr>
+            </div>
+            <div>
+                <tr>
+                    <td><p id="artist"></p> </td>
+                    <td> <p id="song"></p></td>
+                    <td> <p id="release"></p></td>
+                </tr>
+            </div>
+            <div>
+                <tr>
+                    <td>
+                        <select name="AllPlaylists" id="AllPlaylists">
+                            <option value="">Vælg Playliste</option>
+                        </select>
+                    </td>
+                    <td>
+                       <button id="AddButton" onclick="FindSongInfo()">Tilføj</button>
+                    </td>
+                </tr>
+            </div>
+        </table>
+    </div>
+    <div>  
+        <script src="js/SongInfo.js" type="module"></script>
+        <script src="js/ViewPlaylists.js" type="module"></script>
+        <script src="js/SpotifyAccess.js" type="module"></script>
+    </div>
+    <script>
+        function wlep() {
+            console.log("fukka");
+        }
+    </script>
+</body>
+</html>

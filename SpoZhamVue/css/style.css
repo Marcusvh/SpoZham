@@ -1,0 +1,20 @@
+h1{
+
+    position: absolute;
+    top: 10%;
+    left: 43%;
+}
+
+form{
+    position: absolute;
+    top: 20%;
+    left: 41%;
+}
+
+fieldset{
+    border: 1px; 
+    border-color: black; 
+    border-style:solid; 
+    text-align: center;
+    
+}

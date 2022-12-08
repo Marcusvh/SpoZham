@@ -13,9 +13,9 @@ namespace SpoZhamREST.Controllers
 
         // GET: api/<BroadcastsController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public string Get()
         {
-            return new string[] { "value1", "value2" };
+            return _mrg.GetTrackId();
         }
 
         // GET api/<BroadcastsController>/5
@@ -27,12 +27,11 @@ namespace SpoZhamREST.Controllers
 
 
         [HttpPost]
-        [Route("api/Broadcast")]
-        public IActionResult PostTrackHistoryToDB([FromBody] int track, int userid, int trackid)
+        public IActionResult PostTrackHistoryToDB([FromBody] string trackid)
         {
             try
             {
-                return Created("", _mrg.TrackHistoryToDB( userid, trackid));
+                return Created("", _mrg.TrackHistoryToDB(trackid));
             }
             catch (Exception e)
             {

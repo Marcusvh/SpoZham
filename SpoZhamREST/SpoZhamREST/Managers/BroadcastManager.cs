@@ -1,4 +1,5 @@
 ﻿using Microsoft.Data.SqlClient;
+using SpoZhamDLL.model;
 
 namespace SpoZhamREST.Managers
 {
@@ -16,16 +17,15 @@ namespace SpoZhamREST.Managers
         /// <param name="userId"></param>
         /// <param name="trackId"></param>
         /// <returns></returns>
-        public string TrackHistoryToDB(int userId, int trackId)
+        public string TrackHistoryToDB(string trackId)
         {
             DateTime timestamp = DateTime.Now;
 
-            string sql = "INSERT INTO [TrackHistory] VALUES(@userId, @trackId, @timestamp)";
+            string sql = "INSERT INTO [TrackHistory] VALUES(1, @trackId, @timestamp)";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 SqlCommand cmd = new SqlCommand(sql, connection);
-                cmd.Parameters.AddWithValue("@userId", userId);
                 cmd.Parameters.AddWithValue("@trackId", trackId);
                 cmd.Parameters.AddWithValue("@timestamp", timestamp);
                 cmd.Connection.Open();
@@ -33,6 +33,25 @@ namespace SpoZhamREST.Managers
                 int rows = cmd.ExecuteNonQuery();
             }
             return "Success";
+        }
+        public string GetTrackId()
+        {
+            string trackId = "";
+            string sql = "select Track_Id from TrackHistory where Track_History_Id = (select max(Track_History_Id) from TrackHistory)";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand cmd = new SqlCommand(sql, connection);
+                cmd.Connection.Open();
+
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                if (reader.Read())
+                    trackId = reader.GetString(0);
+
+                return trackId;
+
+            }
         }
     }
 }
