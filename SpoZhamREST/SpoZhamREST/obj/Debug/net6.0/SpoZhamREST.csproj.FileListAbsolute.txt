@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:\Users\ringe\Desktop\Zealand\3. Semester\3. Semester projekt\Projektet\SpoZham\SpoZhamREST\SpoZhamREST\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\ringe\Desktop\Zealand\3. Semester\3. Semester projekt\Projektet\SpoZham\SpoZhamREST\SpoZhamREST\bin\Debug\net6.0\appsettings.json
 C:\Users\ringe\Desktop\Zealand\3. Semester\3. Semester projekt\Projektet\SpoZham\SpoZhamREST\SpoZhamREST\bin\Debug\net6.0\SpoZhamREST.exe
@@ -64,6 +65,8 @@ C:\Users\ringe\Desktop\Zealand\3. Semester\3. Semester projekt\Projektet\SpoZham
 C:\Users\ringe\Desktop\Zealand\3. Semester\3. Semester projekt\Projektet\SpoZham\SpoZhamREST\SpoZhamREST\obj\Debug\net6.0\SpoZhamREST.genruntimeconfig.cache
 C:\Users\ringe\Desktop\Zealand\3. Semester\3. Semester projekt\Projektet\SpoZham\SpoZhamREST\SpoZhamREST\obj\Debug\net6.0\ref\SpoZhamREST.dll
 =======
+=======
+>>>>>>> 52521c2c120d8c6e7efb45df2b4d11e1d6276942
 C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamREST\obj\Debug\net6.0\SpoZhamREST.csproj.AssemblyReference.cache
 C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamREST\obj\Debug\net6.0\SpoZhamREST.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamREST\obj\Debug\net6.0\SpoZhamREST.AssemblyInfoInputs.cache
@@ -128,4 +131,7 @@ C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST
 C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamREST\obj\Debug\net6.0\SpoZhamREST.csproj.CopyComplete
 C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamREST\obj\Debug\net6.0\SpoZhamREST.genruntimeconfig.cache
 C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamREST\obj\Debug\net6.0\ref\SpoZhamREST.dll
+<<<<<<< HEAD
+>>>>>>> 52521c2c120d8c6e7efb45df2b4d11e1d6276942
+=======
 >>>>>>> 52521c2c120d8c6e7efb45df2b4d11e1d6276942
