@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\ringe\Desktop\Zealand\3. Semester\3. Semester projekt\Projektet\SpoZham\SpoZhamREST\SpoZhamDLL\bin\Debug\net6.0\SpoZhamDLL.deps.json
 C:\Users\ringe\Desktop\Zealand\3. Semester\3. Semester projekt\Projektet\SpoZham\SpoZhamREST\SpoZhamDLL\bin\Debug\net6.0\SpoZhamDLL.dll
 C:\Users\ringe\Desktop\Zealand\3. Semester\3. Semester projekt\Projektet\SpoZham\SpoZhamREST\SpoZhamDLL\bin\Debug\net6.0\SpoZhamDLL.pdb
@@ -10,3 +11,17 @@ C:\Users\ringe\Desktop\Zealand\3. Semester\3. Semester projekt\Projektet\SpoZham
 C:\Users\ringe\Desktop\Zealand\3. Semester\3. Semester projekt\Projektet\SpoZham\SpoZhamREST\SpoZhamDLL\obj\Debug\net6.0\refint\SpoZhamDLL.dll
 C:\Users\ringe\Desktop\Zealand\3. Semester\3. Semester projekt\Projektet\SpoZham\SpoZhamREST\SpoZhamDLL\obj\Debug\net6.0\SpoZhamDLL.pdb
 C:\Users\ringe\Desktop\Zealand\3. Semester\3. Semester projekt\Projektet\SpoZham\SpoZhamREST\SpoZhamDLL\obj\Debug\net6.0\ref\SpoZhamDLL.dll
+=======
+C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamDLL\bin\Debug\net6.0\SpoZhamDLL.deps.json
+C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamDLL\bin\Debug\net6.0\SpoZhamDLL.dll
+C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamDLL\bin\Debug\net6.0\SpoZhamDLL.pdb
+C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamDLL\obj\Debug\net6.0\SpoZhamDLL.csproj.AssemblyReference.cache
+C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamDLL\obj\Debug\net6.0\SpoZhamDLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamDLL\obj\Debug\net6.0\SpoZhamDLL.AssemblyInfoInputs.cache
+C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamDLL\obj\Debug\net6.0\SpoZhamDLL.AssemblyInfo.cs
+C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamDLL\obj\Debug\net6.0\SpoZhamDLL.csproj.CoreCompileInputs.cache
+C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamDLL\obj\Debug\net6.0\SpoZhamDLL.dll
+C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamDLL\obj\Debug\net6.0\refint\SpoZhamDLL.dll
+C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamDLL\obj\Debug\net6.0\SpoZhamDLL.pdb
+C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamDLL\obj\Debug\net6.0\ref\SpoZhamDLL.dll
+>>>>>>> 52521c2c120d8c6e7efb45df2b4d11e1d6276942

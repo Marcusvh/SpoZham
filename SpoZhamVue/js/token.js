@@ -5,8 +5,6 @@ const errorHandingTag = document.getElementById("errorHandling")
 // User Id
 const testId = 1140904457
 
-console.log(myParam);
-
 /**
  * spotify api call to get the logged in user ID
  * @param {string} token - access token
