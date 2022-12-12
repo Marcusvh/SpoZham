@@ -39,12 +39,6 @@ function makeOption(text, attr, attrValue) {
     parentAppend.appendChild(p)
 }
 
-function ViewPlaylist(){
-    let playlistID = document.getElementById("AllPlaylists").value
-    let playlistShow = document.getElementById("ShowPlaylist")
-    playlistShow.setAttribute('href', "https://open.spotify.com/playlist/" + playlistID)
-   
-}
         
     function makeP(text, attr, attrValue) {
        let parentAppend = document.getElementById('ShowPlaylists')
@@ -62,4 +56,12 @@ function ViewPlaylist(){
 
        parentAppend.appendChild(p)
    }
+
+   function ViewPlaylist(){
+    let playlistID = document.getElementById("AllPlaylists").value
+    let playlistShow = document.getElementById("ShowPlaylist")
+    playlistShow.setAttribute('href', "https://open.spotify.com/playlist/" + playlistID)
+   
+}
+
 
