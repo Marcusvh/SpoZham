@@ -6,7 +6,9 @@ fetch('https://api.spotify.com/v1/users/1110330469/playlists?limit=50',
     method : 'GET',
     headers: {
 
+
         'Authorization': 'Bearer BQDnpWXjUYKSWuC74HjKPdaplsAu-W8F6Nz3pmEij5bKIUziR10cqqeus7VwUFZkaGPPU0i_xbdhf0FaSlm1xyRzjeOm3Q4QRE5hBCHt6Jda0PIGAvL4RFzVOevTIUJq3c4O4lssqm3yWAkpni2AmxCg72vhxcFW4i2xbeKnO2J1FYuheDL3jbMEYwI7', 
+
         'Content-Type': 'application/json',
     },
 })
@@ -107,12 +109,10 @@ function makeP(text, attr, attrValue) {
     parentAppend.appendChild(p)
 }
 
-
    function ViewPlaylist(){
     let playlistID = document.getElementById("AllPlaylists").value
     let playlistShow = document.getElementById("ShowPlaylist")
     playlistShow.setAttribute('href', "https://open.spotify.com/playlist/" + playlistID)
    
 }
-
 
