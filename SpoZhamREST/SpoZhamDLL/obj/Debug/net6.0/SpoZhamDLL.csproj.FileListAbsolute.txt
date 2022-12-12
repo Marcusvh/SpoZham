@@ -28,6 +28,9 @@ C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 36ac8958d929a55400423fb0f6efeb3984ade6a1
 =======
 >>>>>>> 36ac8958d929a55400423fb0f6efeb3984ade6a1
 =======
@@ -46,11 +49,14 @@ C:\3. semester eksamen\SpoZhamREST\SpoZhamDLL\obj\Debug\net6.0\SpoZhamDLL.pdb
 C:\3. semester eksamen\SpoZhamREST\SpoZhamDLL\obj\Debug\net6.0\ref\SpoZhamDLL.dll
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 52521c2c120d8c6e7efb45df2b4d11e1d6276942
 =======
 >>>>>>> 52521c2c120d8c6e7efb45df2b4d11e1d6276942
+=======
+>>>>>>> 36ac8958d929a55400423fb0f6efeb3984ade6a1
 =======
 >>>>>>> 36ac8958d929a55400423fb0f6efeb3984ade6a1
 =======
