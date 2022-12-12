@@ -8,9 +8,17 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SpoZhamREST
 build_property.RootNamespace = SpoZhamREST
-build_property.ProjectDir = C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamREST\
+<<<<<<< HEAD
+build_property.ProjectDir = C:\3. semester eksamen\SpoZhamREST\SpoZhamREST\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamREST
+build_property.MSBuildProjectDirectory = C:\3. semester eksamen\SpoZhamREST\SpoZhamREST
+=======
+build_property.ProjectDir = C:\Users\ringe\Desktop\Zealand\3. Semester\3. Semester projekt\Projektet\SpoZham\SpoZhamREST\SpoZhamREST\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\ringe\Desktop\Zealand\3. Semester\3. Semester projekt\Projektet\SpoZham\SpoZhamREST\SpoZhamREST
+>>>>>>> 83f7868efd56a063196d2887d0259afb82f3d092
 build_property._RazorSourceGeneratorDebug = 

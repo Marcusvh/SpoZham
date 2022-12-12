@@ -3,7 +3,11 @@
   <PropertyGroup>
     <Controller_SelectedScaffolderID>ApiControllerWithActionsScaffolder</Controller_SelectedScaffolderID>
     <Controller_SelectedScaffolderCategoryPath>root/Common/Api</Controller_SelectedScaffolderCategoryPath>
+<<<<<<< HEAD
     <ActiveDebugProfile>SpoZhamREST</ActiveDebugProfile>
+=======
+    <ActiveDebugProfile>IIS Express</ActiveDebugProfile>
+>>>>>>> d3539d7d5ced780eb47e9ca5df165c892b2cc5b4
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>

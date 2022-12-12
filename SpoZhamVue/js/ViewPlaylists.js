@@ -1,10 +1,10 @@
 /**
  * henter en brugers 50 nyeste playlister ud fra deres bruger id
  */
-fetch('https://api.spotify.com/v1/users/1140904457/playlists?limit=50',{
+fetch('https://api.spotify.com/v1/users/1110330469/playlists?limit=50',{
     method : 'GET',
     headers: {
-        'Authorization': 'Bearer BQAO1Og8ttb14ryjfnPGDjmhlR2R0b7G-hgBfMbp2wRrXs2iG9H-uwVxOEykbrjuyv2wpA0qYF_sOunJVMskMk_P_SPWze6P9h2ARjDXIVyYRoPSssqwTfiNt_gulRKBbQhgS2WUK2AVieB-CVYZfa3W5bpkTDpbSudBYIGb3RqVDA5NZs30Ween2EVYb2sTg56dU8QUEaZpe1knxot0QvyJx6jvO86nhzLRjWeRqLDibTl5bQ', 
+        'Authorization': 'Bearer BQAZgbSUIwlw2k4jSt2AyIu2ZFr7U0DJdNG9EkZxaiRy9fnXZS9kgw4mrknhbiCTbV9H4T1Rmn_tX_yYvktsjgzsq0nM39HoxMYOxb8793RN7UV7rkb82JRERp3VEUuPtEwldTZjtQFsgvTPt2gReKVHdgyFPJxNgX96XocA2eJgtZxHQNz5s7XwrNBb', 
         'Content-Type': 'application/json',
     },
 })
