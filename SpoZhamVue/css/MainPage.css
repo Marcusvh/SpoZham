@@ -16,6 +16,16 @@ table, th, td {
     position: absolute;
     top: 5%;
 }
+
+#error1{
+    font-size: xx-large;
+    color: red;
+}
+
+#error2{
+    text-align: center;
+}
+
 /* #Scan{
 
     position: absolute;

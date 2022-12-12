@@ -4,7 +4,7 @@
 fetch('https://api.spotify.com/v1/users/1110330469/playlists?limit=50',{
     method : 'GET',
     headers: {
-        'Authorization': 'Bearer BQAZgbSUIwlw2k4jSt2AyIu2ZFr7U0DJdNG9EkZxaiRy9fnXZS9kgw4mrknhbiCTbV9H4T1Rmn_tX_yYvktsjgzsq0nM39HoxMYOxb8793RN7UV7rkb82JRERp3VEUuPtEwldTZjtQFsgvTPt2gReKVHdgyFPJxNgX96XocA2eJgtZxHQNz5s7XwrNBb', 
+        'Authorization': 'Bearer BQDnpWXjUYKSWuC74HjKPdaplsAu-W8F6Nz3pmEij5bKIUziR10cqqeus7VwUFZkaGPPU0i_xbdhf0FaSlm1xyRzjeOm3Q4QRE5hBCHt6Jda0PIGAvL4RFzVOevTIUJq3c4O4lssqm3yWAkpni2AmxCg72vhxcFW4i2xbeKnO2J1FYuheDL3jbMEYwI7', 
         'Content-Type': 'application/json',
     },
 })

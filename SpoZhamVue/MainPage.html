@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/MainPage.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -13,6 +14,7 @@
             Scannet Sang
         </h1>
     </div>
+    
     <div>
         <table class="center">
             <div>
@@ -39,17 +41,20 @@
                     <td>
                        <button id="AddButton" onclick="FindSongInfo()">Tilføj</button>
                     </td>
-                    <td>
-                        <a id="ShowPlaylist" onclick="ShowPlaylist()">Vis</a>
-                    </td>
                 </tr>
             </div>
+            
         </table>
+        <div id="error2" hidden = true>
+             <p id = "error1"  class="alert alert-danger" style="margin-left: auto;margin-right: auto; width: 50%;" > </p>
+        </div>
         <div id="ShowPlaylists">
         
         </div>
     </div>
     <div>  
+        <script></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src="js/SpotifyAccess.js"></script>
         <script src="js/SongInfo.js"></script>
         <script src="js/ViewPlaylists.js"></script>
