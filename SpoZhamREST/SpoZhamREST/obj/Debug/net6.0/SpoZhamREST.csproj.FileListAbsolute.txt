@@ -1,4 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> a5a2dc194dcee68c7845fdde6d5a8dda423ffe9f
 C:\Users\ringe\Desktop\Zealand\3. Semester\3. Semester projekt\Projektet\SpoZham\SpoZhamREST\SpoZhamREST\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\ringe\Desktop\Zealand\3. Semester\3. Semester projekt\Projektet\SpoZham\SpoZhamREST\SpoZhamREST\bin\Debug\net6.0\appsettings.json
 C:\Users\ringe\Desktop\Zealand\3. Semester\3. Semester projekt\Projektet\SpoZham\SpoZhamREST\SpoZhamREST\bin\Debug\net6.0\SpoZhamREST.exe
@@ -75,6 +81,7 @@ C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST
 C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamREST\obj\Debug\net6.0\SpoZhamREST.dll
 C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamREST\obj\Debug\net6.0\refint\SpoZhamREST.dll
 C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamREST\obj\Debug\net6.0\SpoZhamREST.pdb
+>>>>>>> d3539d7d5ced780eb47e9ca5df165c892b2cc5b4
 C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamREST\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamREST\bin\Debug\net6.0\appsettings.json
 C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamREST\bin\Debug\net6.0\SpoZhamREST.exe
@@ -123,10 +130,20 @@ C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST
 C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamREST\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamREST\bin\Debug\net6.0\SpoZhamDLL.dll
 C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamREST\bin\Debug\net6.0\SpoZhamDLL.pdb
+C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamREST\obj\Debug\net6.0\SpoZhamREST.csproj.AssemblyReference.cache
+C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamREST\obj\Debug\net6.0\SpoZhamREST.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamREST\obj\Debug\net6.0\SpoZhamREST.AssemblyInfoInputs.cache
+C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamREST\obj\Debug\net6.0\SpoZhamREST.AssemblyInfo.cs
+C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamREST\obj\Debug\net6.0\SpoZhamREST.csproj.CoreCompileInputs.cache
+C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamREST\obj\Debug\net6.0\SpoZhamREST.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamREST\obj\Debug\net6.0\SpoZhamREST.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamREST\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamREST\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamREST\obj\Debug\net6.0\scopedcss\bundle\SpoZhamREST.styles.css
 C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamREST\obj\Debug\net6.0\SpoZhamREST.csproj.CopyComplete
+C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamREST\obj\Debug\net6.0\SpoZhamREST.dll
+C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamREST\obj\Debug\net6.0\refint\SpoZhamREST.dll
+C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamREST\obj\Debug\net6.0\SpoZhamREST.pdb
 C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamREST\obj\Debug\net6.0\SpoZhamREST.genruntimeconfig.cache
 C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamREST\obj\Debug\net6.0\ref\SpoZhamREST.dll
 C:\3. semester eksamen\SpoZhamREST\SpoZhamREST\bin\Debug\net6.0\appsettings.Development.json
