@@ -37,21 +37,22 @@
                         </select>
                     </td>
                     <td>
-                       <button id="AddButton" onclick="FindSongInfo()">Tilføj</button>
+                       <button id="AddButton" onclick="AddSongToPlaylist()">Tilføj</button>
                     </td>
                 </tr>
             </div>
         </table>
+        <div id="ShowPlaylists">
+        
+        </div>
     </div>
     <div>  
-        <script src="js/SongInfo.js" type="module"></script>
-        <script src="js/ViewPlaylists.js" type="module"></script>
-        <script src="js/SpotifyAccess.js" type="module"></script>
+
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="js/SpotifyAccess.js"></script>
+        <script src="js/SongInfo.js"></script>
+        <script src="js/ViewPlaylists.js"></script>
+        
     </div>
-    <script>
-        function wlep() {
-            console.log("fukka");
-        }
-    </script>
 </body>
 </html>

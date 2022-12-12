@@ -35,7 +35,8 @@ async function shazamCall () {
         console.log(response)
     })
     .catch(err => console.error(err));
-}shazamCall()
+}
+// shazamCall()
 
 
 
