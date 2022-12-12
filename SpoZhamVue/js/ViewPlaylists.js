@@ -14,28 +14,13 @@ fetch('https://api.spotify.com/v1/users/1110330469/playlists?limit=50',
  * Printer responset ud som en Json.
  */
 .then(response => response.json()) 
-
-/**
- * Printer responset ud som en Json.
- */
-.then(response => response.json()) 
 .then(response => {
     try 
     {
     /**
      * Printer responset ud i consolen.
      */
-    try 
-    {
-    /**
-     * Printer responset ud i consolen.
-     */
         console.log(response)
-        const playlists = response.items
-
-        /**
-         * Går igennem listen af playlister, printer dem ud i consolen og laver options i drop-down menuen.  
-         */   
         const playlists = response.items
 
         /**
@@ -120,28 +105,3 @@ function makeP(text, attr, attrValue) {
 
     parentAppend.appendChild(p)
 }
-
-function ViewPlaylist(){
-    let playlistID = document.getElementById("AllPlaylists").value
-    let playlistShow = document.getElementById("ShowPlaylist")
-    playlistShow.setAttribute('href', "https://open.spotify.com/playlist/" + playlistID)
-   
-}
-        
-    function makeP(text, attr, attrValue) {
-       let parentAppend = document.getElementById('ShowPlaylists')
-
-       let pText;
-       const p = document.createElement('h4')
-       if(text != "" && text != null){
-           pText = document.createTextNode(text)
-           p.append(pText)
-       }
-
-       if(attr != "" && attr != null) {
-           p.setAttribute(attr, attrValue)
-       }
-
-       parentAppend.appendChild(p)
-   }
-
