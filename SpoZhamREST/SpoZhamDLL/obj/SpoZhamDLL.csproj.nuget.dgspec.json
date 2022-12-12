@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj": {}
+    "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj": {}
   },
   "projects": {
-    "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj": {
+    "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj",
+        "projectUniqueName": "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj",
         "projectName": "SpoZhamDLL",
-        "projectPath": "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj",
-        "packagesPath": "C:\\Users\\Cille\\.nuget\\packages\\",
-        "outputPath": "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamDLL\\obj\\",
+        "projectPath": "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj",
+        "packagesPath": "C:\\Users\\ringe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamDLL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Cille\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ringe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

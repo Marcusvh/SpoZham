@@ -1,15 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "D5M4y7KhdVMemVLTHkjA1vd7y/YrE+oqnFXud7QCTZHc8vaIxs4m6w5waPGhdo+vuN7BYOD3CoLvczlaznCgFA==",
+  "dgSpecHash": "tl92WJYTMifR0JnTGGMJVDGYvSF+dQ+XAKpOzVaKnxtam30Hm1hV0UE/GKAce50Kuy0wKgaYAdSkEaBuacNECw==",
   "success": true,
-  "projectFilePath": "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj",
+  "projectFilePath": "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamDLL\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

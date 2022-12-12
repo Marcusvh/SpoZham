@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamRESTTests\\SpoZhamRESTTests.csproj": {}
+    "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamRESTTests\\SpoZhamRESTTests.csproj": {}
   },
   "projects": {
-    "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj": {
+    "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj",
+        "projectUniqueName": "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj",
         "projectName": "SpoZhamDLL",
-        "projectPath": "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj",
-        "packagesPath": "C:\\Users\\Cille\\.nuget\\packages\\",
-        "outputPath": "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamDLL\\obj\\",
+        "projectPath": "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj",
+        "packagesPath": "C:\\Users\\ringe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamDLL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Cille\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ringe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,21 +55,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamRESTTests\\SpoZhamRESTTests.csproj": {
+    "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamRESTTests\\SpoZhamRESTTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamRESTTests\\SpoZhamRESTTests.csproj",
+        "projectUniqueName": "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamRESTTests\\SpoZhamRESTTests.csproj",
         "projectName": "SpoZhamRESTTests",
-        "projectPath": "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamRESTTests\\SpoZhamRESTTests.csproj",
-        "packagesPath": "C:\\Users\\Cille\\.nuget\\packages\\",
-        "outputPath": "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamRESTTests\\obj\\",
+        "projectPath": "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamRESTTests\\SpoZhamRESTTests.csproj",
+        "packagesPath": "C:\\Users\\ringe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamRESTTests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Cille\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ringe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -83,11 +83,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj": {
-                "projectPath": "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj"
+              "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj": {
+                "projectPath": "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj"
               },
-              "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamREST\\SpoZhamREST.csproj": {
-                "projectPath": "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamREST\\SpoZhamREST.csproj"
+              "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamREST\\SpoZhamREST.csproj": {
+                "projectPath": "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamREST\\SpoZhamREST.csproj"
               }
             }
           }
@@ -135,21 +135,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamREST\\SpoZhamREST.csproj": {
+    "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamREST\\SpoZhamREST.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamREST\\SpoZhamREST.csproj",
+        "projectUniqueName": "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamREST\\SpoZhamREST.csproj",
         "projectName": "SpoZhamREST",
-        "projectPath": "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamREST\\SpoZhamREST.csproj",
-        "packagesPath": "C:\\Users\\Cille\\.nuget\\packages\\",
-        "outputPath": "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamREST\\obj\\",
+        "projectPath": "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamREST\\SpoZhamREST.csproj",
+        "packagesPath": "C:\\Users\\ringe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamREST\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Cille\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ringe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -163,8 +163,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj": {
-                "projectPath": "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj"
+              "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj": {
+                "projectPath": "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj"
               }
             }
           }
@@ -215,7 +215,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
