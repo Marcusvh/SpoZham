@@ -98,8 +98,49 @@ namespace SpoZhamREST.Managers
             }
         }
 
+        public bool ValidateSpotifyUserId(string id)
+        {
+            string actualuserid = "";
+
+            bool idexist = false;
+
+            if (string.IsNullOrWhiteSpace(id))
+            {
+                throw new ArgumentNullException("spotify usesr id er tom");
+            }
+
+            string Sql = "select Spotify_Id from spotifyUser";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand cmd = new SqlCommand(Sql, connection);
+                cmd.Connection.Open();
+
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+
+                    actualuserid = reader.GetString(0);
+                    if (actualuserid == id)
+                    {
+                        idexist = true;
+                    }
+                   
+                }
+            }
+
+            return idexist;
+        }
+
         public string refreshToken(string id, string access)
         {
+
+            if (ValidateSpotifyUserId(id) == false)
+            {
+                throw new ArgumentException("Spotify User Id matcher ikke.");
+            }
+
             if (string.IsNullOrWhiteSpace(id) || string.IsNullOrWhiteSpace(access))
                 throw new ArgumentNullException("spotify id og refresh er tom");
 
