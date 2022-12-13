@@ -35,7 +35,7 @@ async function getToken() {
 async function shazamCall () {
     return fetch(`https://shazam-core.p.rapidapi.com/v1/tracks/details?`
     + `track_id=${await trackID().then((response) => response.json()).then((data) => data) }`
-    // + `track_id=218ueiow`
+    // + `track_id=218ueio`
     , options)
 }
 // shazamCall()
@@ -80,13 +80,14 @@ async function ApiSearch() {
     let trackTitle = await shazamCall().then(response => response.json()
                             .then(data => {
                                 if(data.detail.length == 1) {
-                                    errorHandling.innerHTML = ""
+                                    errorHandling.innerHTML = "welp"
                                 }
-                                data.urlparams[Object.keys(data.urlparams)[0]]
+                                else {
+                                    data.urlparams[Object.keys(data.urlparams)[0]]
+                                }
                             }))
     let trackArtitst = await shazamCall().then(response => response.json().then(data => data.urlparams[Object.keys(data.urlparams)[1]]))
     let validateShazamTitle = await shazamCall().then(response => response.json().then(data => data.title))
-
 
     // await axios.get('https://api.spotify.com/v1/search?'
     // + `q=remaster%2520track%3A${trackTitle}%2520artist%3A${trackArtitst}`
@@ -102,4 +103,4 @@ async function ApiSearch() {
         
     // })
 }
-// ApiSearch()
+ApiSearch()
