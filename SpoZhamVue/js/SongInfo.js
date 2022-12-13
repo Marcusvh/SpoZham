@@ -35,7 +35,7 @@ async function getToken() {
 async function shazamCall () {
     return fetch(`https://shazam-core.p.rapidapi.com/v1/tracks/details?`
     + `track_id=${await trackID().then((response) => response.json()).then((data) => data) }`
-    // + `track_id=218ueiow`
+    // + `track_id=218ueiow12`
     , options)
 }
 
@@ -61,7 +61,6 @@ async function GetAndPostToken() {
         axios.post(`http://localhost:5204/api/User/Spotify/RefreshToken?id=APIsangGenkendelse&access=${data.access_token}`)   
             .then(response => {
                 console.log(response);
-                // if(response) TODO: gøres i REST
             })
     })
 } GetAndPostToken()
@@ -74,7 +73,7 @@ async function ApiSearch() {
         headers: {
             "Content-Type": "application/json",
             "Authorization": "Bearer " + await getToken().then(response => response.json().then((data) => data.access))
-        } // token scope giver problemmer ligner det?. nogle sange kan kun blive fundet uden (playlist-modify-private playlist-modify-public) som scope
+        } 
     }
     /**
      * trackTitle - ved et Shazam kald finder vi titlen på sangen.
@@ -85,14 +84,26 @@ async function ApiSearch() {
                                  * Vi tjekker om der kommer en fejlbesked eller ej.
                                  */
                                 if(data.detail.length == 1) {
-                                    errorHandling.innerHTML = ""
+                                    errorHandling.innerHTML = "Sangen kan ikke findes"
+                                } else {
+                                    data.urlparams[Object.keys(data.urlparams)[0]]
                                 }
-                                data.urlparams[Object.keys(data.urlparams)[0]]
                             }))
     /**
      * trackartist - ved et Shazam kalder finder vi artisten til sangen.
      */
-    let trackArtitst = await shazamCall().then(response => response.json().then(data => data.urlparams[Object.keys(data.urlparams)[1]]))
+    let trackArtitst = await shazamCall().then(response => response.json()
+                            .then(data => {
+                                /**
+                                 * Vi tjekker om der kommer en fejlbesked eller ej.
+                                 */
+                                if(data.detail.length == 1) {
+                                    errorHandling.innerHTML = "Sangen kan ikke findes"
+                                } else {
+                                    data.urlparams[Object.keys(data.urlparams)[1]]
+                                }
+                            }))
+
     /**
      * validateShazamTitle - Ved et shazam kald får vi titlen på sangen, til brug ved validering.
      */
