@@ -66,7 +66,9 @@ fetch("https://api.spotify.com/v1/search?q=remaster%2520track%3ADo+It+Now+Rememb
 showSongInfo()
 
 /**
- * Finder information om en sang og printer den ud, giver også AddSongToPlaylist et track id
+ * Finder information om en sang kalder AddSongToPlaylist() funktionen
+ * input: får sanginformation fra spotify
+ * output: ved sucess får den lagt en sang ind på den valgte playliste
  */
 async function FindSongInfo(){
 fetch("https://api.spotify.com/v1/search?q=remaster%2520track%3ADo+It+Now+Remember+It+Later%2520artist%3ASleeping+With+Sirens%2520year%3A2011%25album%3A20Let's+Cheers+To+This&type=track&include_external=audio",{
@@ -78,10 +80,6 @@ fetch("https://api.spotify.com/v1/search?q=remaster%2520track%3ADo+It+Now+Rememb
     })
     .then(response => response.json())
     .then(response => {
-            console.log(response.tracks)
-            document.getElementById('song').innerHTML = response.tracks.items[0].name
-            document.getElementById('artist').innerHTML = response.tracks.items[0].artists[0].name
-            document.getElementById('release').innerHTML = response.tracks.items[0].album.release_date
             AddSongToPlaylist(response.tracks.items[0].id)
     })
     
@@ -89,6 +87,8 @@ fetch("https://api.spotify.com/v1/search?q=remaster%2520track%3ADo+It+Now+Rememb
 
 /**
  * laver et api kald til spotify hvor vi lægger en sang i en playliste
+ * input: Modtaget et track_id, string
+ * output: ved sucess intet, ved fejl printes en fejlmelding. 
  */
  async function AddSongToPlaylist(track_id) {
     let playlistID = document.getElementById("AllPlaylists").value
@@ -109,3 +109,36 @@ fetch("https://api.spotify.com/v1/search?q=remaster%2520track%3ADo+It+Now+Rememb
         console.log(data)
     })
 }
+        await fetch(`https:api.spotify.com/v1/playlists/${playlistID}/tracks`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer " + await getToken().then(response => response.json().then((data) => data.access))
+            },
+            body: JSON.stringify({
+                "uris": [`spotify:track:${track_id}`]
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data)
+            console.log(data.error.status)
+            if(data.error.status == '400'){
+            document.getElementById('error2').removeAttribute("hidden")
+            document.getElementById('error1').innerHTML = 'Der er sket en fejl. Sangen blev ikke tilføjet :('
+
+            }
+           
+                
+
+            
+        })
+        
+  
+
+    }
+
+
+
+ShowSongInfo()   
+

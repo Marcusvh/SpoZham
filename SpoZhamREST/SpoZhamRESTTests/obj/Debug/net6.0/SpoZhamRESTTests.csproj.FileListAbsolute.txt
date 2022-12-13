@@ -1,8 +1,3 @@
-C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamRESTTests\obj\Debug\net6.0\SpoZhamRESTTests.csproj.AssemblyReference.cache
-C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamRESTTests\obj\Debug\net6.0\SpoZhamRESTTests.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamRESTTests\obj\Debug\net6.0\SpoZhamRESTTests.AssemblyInfoInputs.cache
-C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamRESTTests\obj\Debug\net6.0\SpoZhamRESTTests.AssemblyInfo.cs
-C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamRESTTests\obj\Debug\net6.0\SpoZhamRESTTests.csproj.CoreCompileInputs.cache
 C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamRESTTests\bin\Debug\net6.0\CoverletSourceRootsMapping
 C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamRESTTests\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamRESTTests\bin\Debug\net6.0\appsettings.json
@@ -139,6 +134,11 @@ C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST
 C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamRESTTests\bin\Debug\net6.0\SpoZhamREST.dll
 C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamRESTTests\bin\Debug\net6.0\SpoZhamDLL.pdb
 C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamRESTTests\bin\Debug\net6.0\SpoZhamREST.pdb
+C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamRESTTests\obj\Debug\net6.0\SpoZhamRESTTests.csproj.AssemblyReference.cache
+C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamRESTTests\obj\Debug\net6.0\SpoZhamRESTTests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamRESTTests\obj\Debug\net6.0\SpoZhamRESTTests.AssemblyInfoInputs.cache
+C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamRESTTests\obj\Debug\net6.0\SpoZhamRESTTests.AssemblyInfo.cs
+C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamRESTTests\obj\Debug\net6.0\SpoZhamRESTTests.csproj.CoreCompileInputs.cache
 C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamRESTTests\obj\Debug\net6.0\SpoZhamRESTTests.csproj.CopyComplete
 C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamRESTTests\obj\Debug\net6.0\SpoZhamRESTTests.dll
 C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamRESTTests\obj\Debug\net6.0\refint\SpoZhamRESTTests.dll
