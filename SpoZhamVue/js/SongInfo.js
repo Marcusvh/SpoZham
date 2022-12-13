@@ -1,9 +1,16 @@
+/**
+ * RefreshToken for APIsangGenkendelse. its the same as in the database.
+ */
 const refreshToken = "AQBM02xDt4mU_XMtAyO31n7cXgtJUX5pvKHQpJCsLq6lUpShMHJzxs2lrHFoDl9EcbDpSzrB3k9DlLf_8e-2EbZiO6toe_2XRxNLI-v3nxkvhGqy8DJWsItwqLS8eBz4u7o" // DO not TOUCH
 
+const errorHandling = document.getElementById("error1")
+/**
+ * options for Shazam API call
+ */
 const options = {
     method: 'GET',
     headers: {
-        'X-RapidAPI-Key': '0f6eff705dmshf162a9814c66ba5p13b8c4jsnef8afa48c048',
+        'X-RapidAPI-Key': '7d5f825e8cmsh2e6564aa7cd50fcp1a2b19jsn802b5c2088b1',
         'X-RapidAPI-Host': 'shazam-core.p.rapidapi.com'
     }
 };
@@ -26,18 +33,12 @@ async function getToken() {
  * uses the newest shazam track id and gets the details for the song 
  */
 async function shazamCall () {
-    fetch(`https://shazam-core.p.rapidapi.com/v1/tracks/details?`
+    return fetch(`https://shazam-core.p.rapidapi.com/v1/tracks/details?`
     + `track_id=${await trackID().then((response) => response.json()).then((data) => data) }`
-    // + 'track_id=491697169'
+    // + `track_id=218ueiow`
     , options)
-    .then(response => response.json())
-    .then(response => {
-        console.log(response)
-    })
-    .catch(err => console.error(err));
 }
 // shazamCall()
-
 
 
 /**
@@ -61,6 +62,7 @@ async function GetAndPostToken() {
         axios.post(`http://localhost:5204/api/User/Spotify/RefreshToken?id=APIsangGenkendelse&access=${data.access_token}`)   
             .then(response => {
                 console.log(response);
+                // if(response) TODO: gøres i REST
             })
     })
 } GetAndPostToken()
@@ -72,17 +74,32 @@ async function ApiSearch() {
     let options = {
         headers: {
             "Content-Type": "application/json",
-            // "Authorization": "Bearer " + await getToken().then(response => response.json().then((data) => data.access))
             "Authorization": "Bearer " + await getToken().then(response => response.json().then((data) => data.access))
-        } // token scope giver problemmer. nogle sange kan kun blive fundet uden (playlist-modify-private playlist-modify-public) som scope
+        } // token scope giver problemmer ligner det?. nogle sange kan kun blive fundet uden (playlist-modify-private playlist-modify-public) som scope
     }
+    let trackTitle = await shazamCall().then(response => response.json()
+                            .then(data => {
+                                if(data.detail.length == 1) {
+                                    errorHandling.innerHTML = ""
+                                }
+                                data.urlparams[Object.keys(data.urlparams)[0]]
+                            }))
+    let trackArtitst = await shazamCall().then(response => response.json().then(data => data.urlparams[Object.keys(data.urlparams)[1]]))
+    let validateShazamTitle = await shazamCall().then(response => response.json().then(data => data.title))
 
-    axios.get('https://api.spotify.com/v1/search?'
-    + 'q=remaster%2520track%3APerfect%2520Views%2520artist%3ARouge%2520album%3AEarth-EP'
-    // + 'q=remaster%2520track%3ALittle%2520Too%2520Close%2520artist%3AWRLD%2CVeronika%2520Redd%2520album%3AChase%2520It'
-    // + 'q=remaster%2520track%3ABlueming%2520artist%3AIU%2520album%3ALove%2520poem%2520genre%3AKpop%2520year%3A2019'
-    + '&type=track'
-    + '&limit=3', options)
-    .then(response => console.log(response))
+
+    // await axios.get('https://api.spotify.com/v1/search?'
+    // + `q=remaster%2520track%3A${trackTitle}%2520artist%3A${trackArtitst}`
+    // + '&type=track'
+    // + '&limit=3', options)
+    // .then(async response => {
+    //     console.log(response)
+    //     if(response.data.tracks.items[0].name != validateShazamTitle) {
+    //         errorHandling.innerHTML = "titlen matcher ikke på spotify og shazam. måske er det ikke den rigtige sang"
+    //     }
+
+
+        
+    // })
 }
-ApiSearch()
+// ApiSearch()

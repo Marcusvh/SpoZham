@@ -52,7 +52,7 @@ async function reqToken() {
         /**
          * make a post call to REST api to store the user ID, access token and refresh token
          */
-        // await axios.post(`http://localhost:5204/api/User/Spotify/AddToken?id=${userId}&access=${myParam}&refresh=${data.refresh_token}`)   // uncomment this and set ${testId} to ${userId} for getting token into database
+        // await axios.post(`http://localhost:5204/api/User/Spotify/AddToken?id=${userId}&access=${myParam}&refresh=${data.refresh_token}`)   // uncomment this and set ${testId} to ${userId} if it says ${testId}, for getting token into database
         // .then(response => {
         //     console.log(response);
         // })
