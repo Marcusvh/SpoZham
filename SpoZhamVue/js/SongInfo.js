@@ -38,7 +38,6 @@ async function shazamCall () {
     // + `track_id=218ueiow`
     , options)
 }
-// shazamCall()
 
 
 /**
@@ -77,17 +76,31 @@ async function ApiSearch() {
             "Authorization": "Bearer " + await getToken().then(response => response.json().then((data) => data.access))
         } // token scope giver problemmer ligner det?. nogle sange kan kun blive fundet uden (playlist-modify-private playlist-modify-public) som scope
     }
+    /**
+     * trackTitle - ved et Shazam kald finder vi titlen på sangen.
+     */
     let trackTitle = await shazamCall().then(response => response.json()
                             .then(data => {
+                                /**
+                                 * Vi tjekker om der kommer en fejlbesked eller ej.
+                                 */
                                 if(data.detail.length == 1) {
                                     errorHandling.innerHTML = ""
                                 }
                                 data.urlparams[Object.keys(data.urlparams)[0]]
                             }))
+    /**
+     * trackartist - ved et Shazam kalder finder vi artisten til sangen.
+     */
     let trackArtitst = await shazamCall().then(response => response.json().then(data => data.urlparams[Object.keys(data.urlparams)[1]]))
+    /**
+     * validateShazamTitle - Ved et shazam kald får vi titlen på sangen, til brug ved validering.
+     */
     let validateShazamTitle = await shazamCall().then(response => response.json().then(data => data.title))
 
-
+    /**
+     * Vi finder sangen fra spotify api ved brug af udtrækkene fra Shazam
+     */
     // await axios.get('https://api.spotify.com/v1/search?'
     // + `q=remaster%2520track%3A${trackTitle}%2520artist%3A${trackArtitst}`
     // + '&type=track'

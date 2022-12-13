@@ -41,32 +41,6 @@ async function getToken() {
 }
 
 
-
-
-
-// async function getPlaylist() {
-//     fetch(`https://api.spotify.com/v1/users/${userId}/playlists?limit=50`,{
-//         method : 'GET',
-//         headers: {
-//             'Authorization': 'Bearer ' + await getToken().then(response => response.json().then((data) => data.access)), 
-//             'Content-Type': 'application/json',
-//         },
-//     })
-   
-//     .then(response => response.json())
-//     .then(response => {
-//             console.log(response)
-//             const playlists = response.items    
-//             playlists.forEach(element => { 
-//                 console.log(element)
-//                 makeOption(element.name, 'value', element.id)
-//                 makeP(element.name, '', '')
-//             });    
-//     })
-// }
-// getPlaylist()
-
-
 /**
  * Henter en brugers 50 nyeste playlister ud fra deres bruger id
  */
