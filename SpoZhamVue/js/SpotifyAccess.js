@@ -107,38 +107,11 @@ fetch("https://api.spotify.com/v1/search?q=remaster%2520track%3ADo+It+Now+Rememb
     .then(response => response.json())
     .then(data => {
         console.log(data)
+        console.log(data.error.status)
+        if(data.error.status == '400'){
+        document.getElementById('error2').removeAttribute("hidden")
+        document.getElementById('error1').innerHTML = 'Der er sket en fejl. Sangen blev ikke tilføjet :('
+
+        }  
     })
 }
-        await fetch(`https:api.spotify.com/v1/playlists/${playlistID}/tracks`, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-                "Authorization": "Bearer " + await getToken().then(response => response.json().then((data) => data.access))
-            },
-            body: JSON.stringify({
-                "uris": [`spotify:track:${track_id}`]
-            })
-        })
-        .then(response => response.json())
-        .then(data => {
-            console.log(data)
-            console.log(data.error.status)
-            if(data.error.status == '400'){
-            document.getElementById('error2').removeAttribute("hidden")
-            document.getElementById('error1').innerHTML = 'Der er sket en fejl. Sangen blev ikke tilføjet :('
-
-            }
-           
-                
-
-            
-        })
-        
-  
-
-    }
-
-
-
-ShowSongInfo()   
-
