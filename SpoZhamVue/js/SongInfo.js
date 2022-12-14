@@ -155,12 +155,12 @@ async function ApiSearchForAddingToList() {
                                 /**
                                  * Vi tjekker om der kommer en fejlbesked eller ej.
                                  */
-                                // if(data.detail.length == 1) {
-                                //     errorHandling.parentElement.removeAttribute("hidden")
-                                //     errorHandling.innerHTML = "Sangen kan ikke findes"
-                                // } else {
+                                if(data.detail != undefined) {
+                                    errorHandling.parentElement.removeAttribute("hidden")
+                                    errorHandling.innerHTML = "Sangen kan ikke findes"
+                                } else {
                                     return data.urlparams[Object.keys(data.urlparams)[0]]
-                                // }
+                                }
                             }))
     /**
      * trackartist - ved et Shazam kalder finder vi artisten til sangen.
@@ -170,12 +170,12 @@ async function ApiSearchForAddingToList() {
                                 /**
                                  * Vi tjekker om der kommer en fejlbesked eller ej.
                                  */
-                                // if(data.detail.length == 1) {
-                                //     errorHandling.parentElement.removeAttribute("hidden")
-                                //     errorHandling.innerHTML = "Sangen kan ikke findes"
-                                // } else {
+                                if(data.detail != undefined) {
+                                    errorHandling.parentElement.removeAttribute("hidden")
+                                    errorHandling.innerHTML = "Sangen kan ikke findes"
+                                } else {
                                     return data.urlparams[Object.keys(data.urlparams)[1]]
-                                // }
+                                }
                             }))
     /**
      * validateShazamTitle - Ved et shazam kald får vi titlen på sangen, til brug ved validering.

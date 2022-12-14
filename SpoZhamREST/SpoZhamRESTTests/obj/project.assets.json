@@ -46,11 +46,16 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\ringe\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\Cille\\.nuget\\packages\\": {}
+>>>>>>> ac3123708d33a969f5c2c678ec71698731c905c1
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamRESTTests\\SpoZhamRESTTests.csproj",
       "projectName": "SpoZhamRESTTests",
       "projectPath": "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamRESTTests\\SpoZhamRESTTests.csproj",
@@ -59,6 +64,16 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ringe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+      "projectUniqueName": "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamRESTTests\\SpoZhamRESTTests.csproj",
+      "projectName": "SpoZhamRESTTests",
+      "projectPath": "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamRESTTests\\SpoZhamRESTTests.csproj",
+      "packagesPath": "C:\\Users\\Cille\\.nuget\\packages\\",
+      "outputPath": "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamRESTTests\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Cille\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> ac3123708d33a969f5c2c678ec71698731c905c1
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -72,11 +87,19 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+<<<<<<< HEAD
             "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj": {
               "projectPath": "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj"
             },
             "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamREST\\SpoZhamREST.csproj": {
               "projectPath": "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamREST\\SpoZhamREST.csproj"
+=======
+            "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj": {
+              "projectPath": "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj"
+            },
+            "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamREST\\SpoZhamREST.csproj": {
+              "projectPath": "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamREST\\SpoZhamREST.csproj"
+>>>>>>> ac3123708d33a969f5c2c678ec71698731c905c1
             }
           }
         }
