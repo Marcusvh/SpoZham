@@ -71,7 +71,8 @@ async function getPlaylist() {
              */   
             playlists.forEach(element => { 
                 makeOption(element.name, 'value', element.id)
-                makeP(element.name, '', '')
+                makeP(element.name, 'href', element.external_urls.spotify)
+                
             })
         }
         /**
@@ -128,7 +129,7 @@ function makeOption(text, attr, attrValue)
 }
 
 /**
- * Funktion til visning af playlister i venstre side.
+ * Funktion til visning og linkning af playlister i venstre side og laver en streg under hver playlist navn. 
  * @param {text} text 
  * @param {attribute} attr 
  * @param {attributevalue} attrValue 
@@ -137,7 +138,7 @@ function makeP(text, attr, attrValue) {
     let parentAppend = document.getElementById('ShowPlaylists')
 
     let pText;
-    const p = document.createElement('h4')
+    const p = document.createElement('a')
     if(text != "" && text != null){
         pText = document.createTextNode(text)
         p.append(pText)
@@ -146,6 +147,8 @@ function makeP(text, attr, attrValue) {
     if(attr != "" && attr != null) {
         p.setAttribute(attr, attrValue)
     }
-
+    let hr = document.createElement("hr")
+    hr.setAttribute("class", "playlistItemsLine")
+    parentAppend.appendChild(hr)
     parentAppend.appendChild(p)
 }

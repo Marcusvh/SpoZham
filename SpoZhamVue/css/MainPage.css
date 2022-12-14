@@ -21,11 +21,16 @@ table p{
     border-radius: 10px;
     /* background-color: rgb(122, 134, 182); */
     box-shadow: 5px 5px 5px 5px rgba(100, 100, 100, 0.5);
+    display: flex;
+    flex-direction: column;
 }
-#ShowPlaylists h4 {
+#ShowPlaylists a {
     font-size: 16px;
-    border-bottom: 1.5px #111 solid;
-    width: 90%;
+    /* border-bottom: 1.5px #111 solid; */
+    width: fit-content;
+    color: black;
+    text-decoration: none;
+    margin: 0.25em 0 0 1em;
 }
 #error1{
     font-size: xx-large;
@@ -121,4 +126,26 @@ main {
 }
 .mainPage_Wrapper table td select {
     width: 10em;
+}
+.playlistItemsLine {
+    border-top: 2px solid #aaa;
+    width: 90%;
+    margin: 0.25em auto;
+}
+
+
+/* /////////////////////// */
+/* accessToken */
+.accessTokenLinkToMainPage{
+    width: 54vw;
+    display: flex;
+    margin: auto;
+    
+}
+.accessTokenLinkMainPage {
+    margin: auto;
+    padding: 10vw 19vw;
+    background-color: #aaa;
+    text-align: center;
+    font-size: xx-large;
 }

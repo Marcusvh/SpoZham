@@ -132,7 +132,7 @@ async function ApiSearch() {
         document.getElementById('release').innerHTML = response.data.tracks.items[0].album.release_date
     })
 }
-ApiSearch()
+// ApiSearch()
 
 
 

@@ -4,11 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/MainPage.css">
     <title>Access Token</title>
 </head>
 <body>
+    <header>
+        <h1>SpoZham</h1>
+    </header>
+
     <h2 id="errorHandling"></h2>
-    <button onclick="RefreshToken()">Refresh token</button>
+    
+    <a class="accessTokenLinkToMainPage" href="http://127.0.0.1:5500/mainpage.html">
+        <div class="accessTokenLinkMainPage">
+            Til Forsiden
+        </div>
+    </a>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="js/token.js"></script>
