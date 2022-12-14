@@ -41,8 +41,8 @@ async function getToken() {
  */
 async function shazamCall () {
     return fetch(`https://shazam-core.p.rapidapi.com/v1/tracks/details?`
-    + `track_id=${await trackID().then((response) => response.json()).then((data) => data) }`
-    // + `track_id=218ueiow12`
+    //+ `track_id=${await trackID().then((response) => response.json()).then((data) => data) }`
+    + `track_id=218ueiow12`
     , options)
 }
 
