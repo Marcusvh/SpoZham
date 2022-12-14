@@ -23,7 +23,6 @@ async function GetAndPostToken() {
     .then((response) => response.json())
     .then((data) => {
         console.log(data);
-        // TODO exception
         axios.post(`http://localhost:5204/api/User/Spotify/RefreshToken?id=${userId}&access=${data.access_token}`)   
             .then(response => {
                 console.log(response);
@@ -71,7 +70,6 @@ async function getPlaylist() {
              * Går igennem listen af playlister, printer dem ud i consolen og laver options i drop-down menuen.  
              */   
             playlists.forEach(element => { 
-                console.log(element)
                 makeOption(element.name, 'value', element.id)
                 makeP(element.name, '', '')
             })
