@@ -17,7 +17,7 @@ const errorHandling = document.getElementById("error1")
 const options = {
     method: 'GET',
     headers: {
-        'X-RapidAPI-Key': '7d5f825e8cmsh2e6564aa7cd50fcp1a2b19jsn802b5c2088b1',
+        'X-RapidAPI-Key': '315041ee33mshe61d494a3c783dbp1efdb5jsnc23226708601',
         'X-RapidAPI-Host': 'shazam-core.p.rapidapi.com'
     }
 };
@@ -221,11 +221,23 @@ async function AddSongToPlaylist(track_id) {
     .then(response => response.json())
     .then(data => {
         console.log(data)
-        console.log(data.error.status)
-        if(data.error.status == '400'){
-        document.getElementById('error2').removeAttribute("hidden")
-        document.getElementById('error1').innerHTML = 'Der er sket en fejl. Sangen blev ikke tilføjet :('
+        
 
-        }  
+    /**
+     * hvis der kommer et snapshot_id som response, så fjerne vi hidden fra den div hvor beskeden ligger i, samt sender en besked med
+     */
+        if('snapshot_id' in data == true){
+            document.getElementById('success').removeAttribute('hidden')
+            document.getElementById('successText').innerHTML = `Sangen blev tilføjet til playlisten`
+        }
+        /**
+         * hvis der er en fejlbesked med status koden 400 som response, så fjerner vi hidden fra den div hvor fejl beskeden ligger i, samt sender en besked med
+         */
+        if(data.error.status == '400'){
+            document.getElementById('error2').removeAttribute("hidden")
+            document.getElementById('error1').innerHTML = 'Der er sket en fejl. Sangen blev ikke tilføjet :('
+        }
+        
+        
     })
 }

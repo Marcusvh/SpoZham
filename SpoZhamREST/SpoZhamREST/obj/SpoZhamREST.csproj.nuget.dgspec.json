@@ -1,24 +1,37 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bruger\\Desktop\\Zealand\\3sem\\Eksamen\\Systemudvikling\\SpoZham\\SpoZhamREST\\SpoZhamREST\\SpoZhamREST.csproj": {}
+<<<<<<< HEAD
+    "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamREST\\SpoZhamREST.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bruger\\Desktop\\Zealand\\3sem\\Eksamen\\Systemudvikling\\SpoZham\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj": {
+    "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bruger\\Desktop\\Zealand\\3sem\\Eksamen\\Systemudvikling\\SpoZham\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj",
+        "projectUniqueName": "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj",
         "projectName": "SpoZhamDLL",
-        "projectPath": "C:\\Users\\Bruger\\Desktop\\Zealand\\3sem\\Eksamen\\Systemudvikling\\SpoZham\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj",
-        "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bruger\\Desktop\\Zealand\\3sem\\Eksamen\\Systemudvikling\\SpoZham\\SpoZhamREST\\SpoZhamDLL\\obj\\",
+        "projectPath": "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj",
+        "packagesPath": "C:\\Users\\ringe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamDLL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\ringe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamREST\\SpoZhamREST.csproj": {}
+  },
+  "projects": {
+    "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj",
+        "projectName": "SpoZhamDLL",
+        "projectPath": "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj",
+        "packagesPath": "C:\\Users\\Cille\\.nuget\\packages\\",
+        "outputPath": "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamDLL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Cille\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> ac3123708d33a969f5c2c678ec71698731c905c1
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -49,35 +62,39 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Bruger\\Desktop\\Zealand\\3sem\\Eksamen\\Systemudvikling\\SpoZham\\SpoZhamREST\\SpoZhamREST\\SpoZhamREST.csproj": {
+<<<<<<< HEAD
+    "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamREST\\SpoZhamREST.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bruger\\Desktop\\Zealand\\3sem\\Eksamen\\Systemudvikling\\SpoZham\\SpoZhamREST\\SpoZhamREST\\SpoZhamREST.csproj",
+        "projectUniqueName": "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamREST\\SpoZhamREST.csproj",
         "projectName": "SpoZhamREST",
-        "projectPath": "C:\\Users\\Bruger\\Desktop\\Zealand\\3sem\\Eksamen\\Systemudvikling\\SpoZham\\SpoZhamREST\\SpoZhamREST\\SpoZhamREST.csproj",
-        "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bruger\\Desktop\\Zealand\\3sem\\Eksamen\\Systemudvikling\\SpoZham\\SpoZhamREST\\SpoZhamREST\\obj\\",
+        "projectPath": "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamREST\\SpoZhamREST.csproj",
+        "packagesPath": "C:\\Users\\ringe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamREST\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\ringe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamREST\\SpoZhamREST.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamREST\\SpoZhamREST.csproj",
+        "projectName": "SpoZhamREST",
+        "projectPath": "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamREST\\SpoZhamREST.csproj",
+        "packagesPath": "C:\\Users\\Cille\\.nuget\\packages\\",
+        "outputPath": "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamREST\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Cille\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> ac3123708d33a969f5c2c678ec71698731c905c1
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -91,8 +108,13 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Bruger\\Desktop\\Zealand\\3sem\\Eksamen\\Systemudvikling\\SpoZham\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj": {
-                "projectPath": "C:\\Users\\Bruger\\Desktop\\Zealand\\3sem\\Eksamen\\Systemudvikling\\SpoZham\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj"
+<<<<<<< HEAD
+              "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj": {
+                "projectPath": "C:\\Users\\ringe\\Desktop\\Zealand\\3. Semester\\3. Semester projekt\\Projektet\\SpoZham\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj"
+=======
+              "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj": {
+                "projectPath": "C:\\3. semester eksamen\\SpoZhamREST\\SpoZhamDLL\\SpoZhamDLL.csproj"
+>>>>>>> ac3123708d33a969f5c2c678ec71698731c905c1
               }
             }
           }
@@ -106,44 +128,17 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "dependencies": {
-            "Microsoft.AspNet.Cors": {
-              "target": "Package",
-              "version": "[5.2.9, )"
-            },
-            "Microsoft.AspNetCore.Cors": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
-            "Microsoft.Data.SqlClient": {
-              "target": "Package",
-              "version": "[5.0.1, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[6.2.3, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     }
