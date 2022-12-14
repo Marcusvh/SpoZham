@@ -10,52 +10,61 @@
 </head>
 <body>
 
-    <div class="center">
-        <h1 >
-            Scannet Sang
-        </h1>
-    </div>
-    
-    <div>
-        <table class="center">
-            <div>
-                <tr>
-                    <th>Kunstner</th>
-                    <th>Titel</th>
-                    <th>Udgivelsesdato</th>
-                </tr>
+    <header>
+        <h1>SpoZham</h1>
+    </header>
+    <main>
+        
+        <div class="pageContent_Wrapper">
+            <div id="ShowPlaylists">
+            
             </div>
-            <div>
-                <tr>
-                    <td><p id="artist"></p> </td>
-                    <td> <p id="song"></p></td>
-                    <td> <p id="release"></p></td>
-                </tr>
+
+            <div class="mainPage_Wrapper">
+            <h2 class="pageTitle">Scannet Sang</h2>
+
+            <table class="center">
+                <div>
+                    <tr>
+                        <th>Kunstner</th>
+                        <th>Titel</th>
+                        <th>Udgivelsesdato</th>
+                    </tr>
+                </div>
+                <div>
+                    <tr>
+                        <td><p id="artist"></p> </td>
+                        <td> <p id="song"></p></td>
+                        <td> <p id="release"></p></td>
+                    </tr>
+                </div>
+                <div>
+                    <tr>
+                        <td>
+                            <select name="AllPlaylists" id="AllPlaylists">
+                                <option value="">Vælg Playliste</option>
+                            </select>
+                        </td>
+                        <td>
+                        <button id="AddButton" onclick="ApiSearchForAddingToList()">Tilføj</button>
+                        </td>   
+                        <td>
+                            <a href="javascript:location.reload(true)">genindlæs for at se den nye sang</a>
+                        </td>
+                    </tr>
+                </div>
+                
+            </table>
+            <div id="error2" hidden = true>
+                <p id="error1"  class="alert alert-danger"> </p>
             </div>
-            <div>
-                <tr>
-                    <td>
-                        <select name="AllPlaylists" id="AllPlaylists">
-                            <option value="">Vælg Playliste</option>
-                        </select>
-                    </td>
-                    <td>
-                       <button id="AddButton" onclick="FindSongInfo()">Tilføj</button>
-                    </td>   
-                </tr>
+            <div id="error" hidden="true" class="alert alert-danger" style="margin-left: auto;margin-right: auto; margin-top: auto; width: 50%;"></div>
             </div>
             
-        </table>
-        <div id="error2" hidden = true>
-             <p id="error1"  class="alert alert-danger" style="margin-left: auto;margin-right: auto; width: 50%;" > </p>
+            
         </div>
-        <div id="error" hidden="true" class="alert alert-danger" style="margin-left: auto;margin-right: auto; margin-top: auto; width: 50%;"></div>
-        <div id="ShowPlaylists">
-        
-        </div>
-    </div>
-    <div>  
-
+        <div>  
+    </main>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src="js/SpotifyAccess.js"></script>
         <script src="js/SongInfo.js"></script>
