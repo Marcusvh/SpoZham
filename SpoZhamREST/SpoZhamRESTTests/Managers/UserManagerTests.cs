@@ -178,5 +178,7 @@ namespace SpoZhamREST.Managers.Tests
 
             Assert.IsTrue((actual.id == "unitTestId" && actual.refresh == refreshToken));
         }
+
+       
     }
 }
