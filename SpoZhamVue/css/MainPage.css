@@ -41,6 +41,14 @@ table p{
     color: red;
 }
 
+#successText{
+    text-align: center;
+    margin: 1em auto;
+    font-size: xx-large;
+    color: green;
+}
+
+
 /* #Scan{
 
     position: absolute;
