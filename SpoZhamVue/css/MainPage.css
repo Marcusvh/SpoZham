@@ -24,6 +24,8 @@ table p{
 }
 #ShowPlaylists h4 {
     font-size: 16px;
+    border-bottom: 1.5px #111 solid;
+    width: 90%;
 }
 #error1{
     font-size: xx-large;
