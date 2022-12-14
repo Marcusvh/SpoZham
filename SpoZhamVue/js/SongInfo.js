@@ -84,6 +84,7 @@ async function ApiSearch() {
                                  * Vi tjekker om der kommer en fejlbesked eller ej.
                                  */
                                 if(data.detail.length == 1) {
+                                    errorHandling.parentElement.removeAttribute("hidden")
                                     errorHandling.innerHTML = "Sangen kan ikke findes"
                                 } else {
                                     data.urlparams[Object.keys(data.urlparams)[0]]
@@ -98,12 +99,12 @@ async function ApiSearch() {
                                  * Vi tjekker om der kommer en fejlbesked eller ej.
                                  */
                                 if(data.detail.length == 1) {
+                                    errorHandling.parentElement.removeAttribute("hidden")
                                     errorHandling.innerHTML = "Sangen kan ikke findes"
                                 } else {
                                     data.urlparams[Object.keys(data.urlparams)[1]]
                                 }
                             }))
-
     /**
      * validateShazamTitle - Ved et shazam kald får vi titlen på sangen, til brug ved validering.
      */
@@ -126,4 +127,4 @@ async function ApiSearch() {
         
     // })
 }
-// ApiSearch()
+ApiSearch()
