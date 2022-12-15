@@ -49,7 +49,7 @@ namespace SpoZhamREST.Controllers
             }
             catch (Exception e)
             {
-                return BadRequest("fukka u");
+                return BadRequest(e.Message);
             }
         }
 

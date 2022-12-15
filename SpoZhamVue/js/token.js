@@ -52,12 +52,17 @@ async function reqToken() {
         /**
          * make a post call to REST api to store the user ID, access token and refresh token
          */
-        // await axios.post(`http://localhost:5204/api/User/Spotify/AddToken?id=${userId}&access=${myParam}&refresh=${data.refresh_token}`)   // uncomment this and set ${testId} to ${userId} if it says ${testId}, for getting token into database
-        // .then(response => {
-        //     console.log(response);
-        // })
+        axios.post(`https://spozham-rest.azurewebsites.net/api/User/Spotify/AddToken?id=${userId}&access=${myParam}&refresh=${data.refresh_token}`)
+        .then(response => {
+            console.log(response);
+            console.log(response.response.status);
+            if(response.response.status == 400) {
+                errorHandling.innerHTML = response.response.data
+            }
+        })
     })
     .catch((error) => {
+        console.log(error);
         if(error.response.status == 401) {
             errorHandingTag.innerHTML = "Kunne ikke få adgang til spotify. genindlæs siden og prøv igen. " + error.code + " " + error.response.status
         }

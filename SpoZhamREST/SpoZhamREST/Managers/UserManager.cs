@@ -51,6 +51,10 @@ namespace SpoZhamREST.Managers
             {
                 throw new ArgumentNullException("fik ikke nogle oplysninger med");
             }
+            if(ValidateSpotifyUserId(spot.id))
+            {
+                throw new ArgumentException("De bruger oplysninger findes allerede");
+            }
 
             string sql = "INSERT INTO SpotifyUser VALUES(@id, @access, @refresh, @time)";
             DateTime dateToken = DateTime.Now;
