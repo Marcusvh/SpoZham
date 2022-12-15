@@ -5,6 +5,7 @@
     <Controller_SelectedScaffolderCategoryPath>root/Common/Api</Controller_SelectedScaffolderCategoryPath>
     <ActiveDebugProfile>SpoZhamREST</ActiveDebugProfile>
     <ActiveDebugProfile>SpoZhamREST</ActiveDebugProfile>
+    <NameOfLastUsedPublishProfile>C:\Users\Bruger\Desktop\Zealand\3sem\Eksamen\Systemudvikling\SpoZham\SpoZhamREST\SpoZhamREST\Properties\PublishProfiles\SpoZham-REST - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>

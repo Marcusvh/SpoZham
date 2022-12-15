@@ -2,7 +2,7 @@
  * Gets the refresh token to get a new access token, based on the user ID
  */
 async function RefreshToken() {
-    return axios.get(`http://localhost:5204/api/User/Spotify/GetRefreshToken?id=${userId}`)
+    return axios.get(`https://spozham-rest.azurewebsites.net/api/User/Spotify/GetRefreshToken?id=${userId}`)
 }
 
 /**
@@ -23,7 +23,7 @@ async function GetAndPostToken() {
     .then((response) => response.json())
     .then((data) => {
         console.log(data);
-        axios.post(`http://localhost:5204/api/User/Spotify/RefreshToken?id=${userId}&access=${data.access_token}`)   
+        axios.post(`https://spozham-rest.azurewebsites.net/api/User/Spotify/RefreshToken?id=${userId}&access=${data.access_token}`)   
             .then(response => {
                 console.log(response);
             })
@@ -36,7 +36,7 @@ async function GetAndPostToken() {
  * @returns the api call
  */
 async function getToken() {
-    return fetch(`http://localhost:5204/api/User/Spotify/Token?id=${userId}`)
+    return fetch(`https://spozham-rest.azurewebsites.net/api/User/Spotify/Token?id=${userId}`)
 }
 
 

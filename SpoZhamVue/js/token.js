@@ -69,7 +69,7 @@ reqToken()
 /**
  * checks if there has passed 1 hour from token creating. it will run RefreshToken function if it has.
  */
-axios.get(`http://localhost:5204/api/User/Spotify/Token?id=${testId}`)
+axios.get(`https://spozham-rest.azurewebsites.net/api/User/Spotify/Token?id=${testId}`)
 .then(response => {
     console.log(response);
     let time = response.data.timeStamp
@@ -101,7 +101,7 @@ async function RefreshToken() {
     /**
      * Gets the refresh token to get a new access token, based on the user ID
      */
-    await axios.get(`http://localhost:5204/api/User/Spotify/GetRefreshToken?id=${testId}`)
+    await axios.get(`https://spozham-rest.azurewebsites.net/api/User/Spotify/GetRefreshToken?id=${testId}`)
     .then(response => {
         refreshToken = response.data
         if(refreshToken == "") {
@@ -134,7 +134,7 @@ async function RefreshToken() {
         /**
          * adds the new access token to REST api, where it will be put into the database
          */
-        await axios.post(`http://localhost:5204/api/User/Spotify/RefreshToken?id=${testId}&access=${data.access_token}`)   
+        await axios.post(`https://spozham-rest.azurewebsites.net/api/User/Spotify/RefreshToken?id=${testId}&access=${data.access_token}`)   
         .then(response => {
             console.log(response);
         })

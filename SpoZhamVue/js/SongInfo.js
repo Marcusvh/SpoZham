@@ -26,14 +26,14 @@ const options = {
  * @returns the api call
  */
 async function trackID() {
-    return fetch("http://localhost:5204/api/Broadcasts")
+    return fetch("https://spozham-rest.azurewebsites.net/api/Broadcasts")
 }
 /**
  *  api call to get the access token based on userID 
  * @returns the api call
  */
 async function getToken() {
-    return fetch('http://localhost:5204/api/User/Spotify/Token?id=APIsangGenkendelse')
+    return fetch('https://spozham-rest.azurewebsites.net/api/User/Spotify/Token?id=APIsangGenkendelse')
 }
 
 /**
@@ -64,7 +64,7 @@ async function GetAndPostToken() {
     .then((response) => response.json())
     .then((data) => {
         console.log(data);
-        axios.post(`http://localhost:5204/api/User/Spotify/RefreshToken?id=APIsangGenkendelse&access=${data.access_token}`)   
+        axios.post(`https://spozham-rest.azurewebsites.net/api/User/Spotify/RefreshToken?id=APIsangGenkendelse&access=${data.access_token}`)   
             .then(response => {
                 console.log(response);
             })
@@ -132,7 +132,7 @@ async function ApiSearch() {
         document.getElementById('release').innerHTML = response.data.tracks.items[0].album.release_date
     })
 }
-// ApiSearch()
+ApiSearch()
 
 
 
